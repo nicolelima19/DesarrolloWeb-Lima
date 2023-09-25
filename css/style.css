@@ -5,6 +5,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
+    background-color: white;
 }
 
 
@@ -28,7 +29,7 @@ h1 {
 }
 
 .navbar a {
-    background-color: rgba(128, 128, 128, 0.527);
+    background-color: #44015e;
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -44,7 +45,7 @@ main {
 /* Estilos para el encabezado (header) */
 header {
     padding: 20px;
-    background-color: black;
+    background-color: #000000;
     height: 140px;
 }
 
@@ -53,7 +54,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #ca1818c7;
+    background-color: #44015e;
     color: white;
 
 }
@@ -88,6 +89,7 @@ h3 {
 
 .article2 {
     align-content: center;
+    background-color: #e2c6ec;
 }
 
 h2 {
@@ -104,6 +106,9 @@ aside {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.700);
     justify-content: center;
     flex-direction: column;
+}
+.colorAside{
+background-color: #c191d4;
 }
 
 /* Estilos para los article */
@@ -141,7 +146,7 @@ a {
     justify-content: center;
     align-items: center;
     text-decoration: underline;
-    color: black;
+    color: white;
     border-radius: 5px;
 }
 
@@ -172,7 +177,7 @@ a {
     padding: 10px;
     border: 1px solid #ddd;
     margin-bottom: 10px;
-    background-color: rgb(234, 216, 245);
+    background-color: #e2c6ec;
 }
 
 /* Estilos para las secciones */
@@ -228,12 +233,10 @@ a {
 
 /* Enlaces button */
 .caja {
-    background-color: rgb(85, 148, 127);
-    border: 1px solid rgb(26, 94, 71);
+    background-color: #44015e;
     border-radius: 10px;
     padding: 2px;
     text-decoration: none;
-    color: black;
     width: 130px;
     align-self: center;
 }
@@ -251,11 +254,10 @@ a {
 }
 
 .caja1 {
-    background-color: rgb(85, 148, 127);
-    border: 1px solid rgb(26, 94, 71);
+    background-color: #44015e;
     border-radius: 10px;
     padding: 2px;
-    color: black;
+    color: white;
     width: 180px;
 }
 
@@ -272,12 +274,11 @@ a {
 }
 
 .caja2 {
-    background-color: rgb(85, 148, 127);
-    border: 1px solid rgb(26, 94, 71);
+    background-color: #44015e;
     border-radius: 10px;
     padding: 2px;
     text-decoration: none;
-    color: black;
+    color: white;
     width: 70px;
     align-self: center;
 }
@@ -397,7 +398,9 @@ a {
     align-items: center;
 
 }
-
+.colorClass{
+    background-color: #e2c6ec;
+}
 
 /* TABLET */
 @media screen and (max-width: 1024px) {
@@ -449,8 +452,7 @@ a {
 
 /* Enlaces button TABLET */
 .caja {
-    background-color: rgb(85, 148, 127);
-    border: 1px solid rgb(26, 94, 71);
+    background-color: #44015e;
     border-radius: 10px;
     padding: 2px;
     text-decoration: none;
@@ -472,8 +474,7 @@ a {
 }
 
 .caja1 {
-    background-color: rgb(85, 148, 127);
-    border: 1px solid rgb(26, 94, 71);
+    background-color: 44015e;
     border-radius: 10px;
     padding: 2px;
     color: black;
@@ -493,8 +494,7 @@ a {
 }
 
 .caja2 {
-    background-color: rgb(85, 148, 127);
-    border: 1px solid rgb(26, 94, 71);
+    background-color: #44015e;
     border-radius: 10px;
     padding: 2px;
     text-decoration: none;
@@ -549,8 +549,7 @@ a {
 
 /* Enlaces button */
 .caja {
-    background-color: rgb(85, 148, 127);
-    border: 1px solid rgb(26, 94, 71);
+    background-color: #44015e;
     border-radius: 10px;
     padding: 2px;
     text-decoration: none;
@@ -572,8 +571,7 @@ a {
 }
 
 .caja1 {
-    background-color: rgb(85, 148, 127);
-    border: 1px solid rgb(26, 94, 71);
+    background-color: #44015e;
     border-radius: 10px;
     padding: 2px;
     color: black;
@@ -593,12 +591,10 @@ a {
 }
 
 .caja2 {
-    background-color: rgb(85, 148, 127);
-    border: 1px solid rgb(26, 94, 71);
+    background-color: #44015e;
     border-radius: 10px;
     padding: 2px;
     text-decoration: none;
-    color: black;
     width: 50px;
     align-self: center;
 }
@@ -616,3 +612,14 @@ a {
 }
 
 }
+/*
+ PALETA DE COLORES
+    color: #000000;
+    color: #44015e;
+    color: #e2c6ec; 
+
+    color: #00c599; 
+    color: #00e6f9;
+    color:  white;
+
+*/
