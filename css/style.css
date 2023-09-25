@@ -1,0 +1,618 @@
+/* DESKSTOP */
+/* Estilos generales */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+
+h1 {
+
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+/* Estilos para la barra de navegación */
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1px 1px;
+
+}
+
+.navbar a {
+    background-color: rgba(128, 128, 128, 0.527);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+}
+
+/* Estilos para la sección principal (main) */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    padding: 20px;
+    background-color: black;
+    height: 140px;
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ca1818c7;
+    color: white;
+
+}
+
+.iconosRedes {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.enlacesFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlacesFooter li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    font-style: oblique;
+}
+
+.article2 {
+    align-content: center;
+}
+
+h2 {
+
+    text-align: center;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.700);
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Estilos para los article */
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(202, 187, 183);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.700);
+}
+
+.gridRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+p {
+    text-align: center;
+}
+
+.contactoMain {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Estilos para un contenedor article */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.sectionA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para un elemento dentro del contenedor */
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: rgb(234, 216, 245);
+}
+
+/* Estilos para las secciones */
+.infoMain {
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    text-size-adjust: 30px;
+}
+
+/**/
+
+/* Contacto */
+/* Estilos para el formulario */
+
+.label {
+    display: flex;
+    margin-bottom: 6px;
+    justify-content: center;
+}
+
+.textoRecordatorio {
+    color: grey;
+    font-size: 12px;
+}
+
+.input .textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.datos {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+/* Estilos para el botón de envío */
+.button {
+    background-color: #dddbdb;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/**/
+
+/* Enlaces button */
+.caja {
+    background-color: rgb(85, 148, 127);
+    border: 1px solid rgb(26, 94, 71);
+    border-radius: 10px;
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+    width: 130px;
+    align-self: center;
+}
+
+.caja:hover {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja:active {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja:visited {
+    background-color: rgb(201, 247, 231);
+}
+
+.caja1 {
+    background-color: rgb(85, 148, 127);
+    border: 1px solid rgb(26, 94, 71);
+    border-radius: 10px;
+    padding: 2px;
+    color: black;
+    width: 180px;
+}
+
+.caja1:hover {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja1:active {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja1:visited {
+    background-color: rgb(201, 247, 231);
+}
+
+.caja2 {
+    background-color: rgb(85, 148, 127);
+    border: 1px solid rgb(26, 94, 71);
+    border-radius: 10px;
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+    width: 70px;
+    align-self: center;
+}
+
+.caja2:hover {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja2:active {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja2:visited {
+    background-color: rgb(201, 247, 231);
+}
+
+/* Grid contacto */
+
+.headerGrid {
+    grid-area: header;
+    height: 140px;
+
+}
+
+.divGrid {
+    grid-area: div;
+    margin: 5vh;
+}
+
+.h2Grid {
+    grid-area: h2;
+}
+
+
+
+.section1 {
+    grid-area: section1;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.section2 {
+    grid-area: section2;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section3 {
+    grid-area: section3;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.margin {
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    align-self: center;
+}
+
+.enviarGrid {
+    grid-area: enviar;
+    display: flex;
+    justify-content: center;
+
+}
+
+.asideGrid {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footerGrid {
+    grid-area: footer;
+}
+
+.bodyContact {
+    /* Grid */
+    display: grid;
+    grid-template-areas:
+        "header    header     header"
+        "div       div        div"
+        "h2        h2         h2"
+        "section1  section2   section3"
+        "enviar    enviar     enviar"
+        "aside     aside      aside"
+        "footer    footer     footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 30%;
+    justify-items: stretch;
+    height: 65vh;
+    min-height: 50vh;
+    row-gap: 10px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+.alingContact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+/* TABLET */
+@media screen and (max-width: 1024px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Comfortaa', cursive;
+        font-size: 12px;
+    }
+
+    .bodyContact {
+        /* Grid */
+        display: grid;
+        grid-template-areas:
+            "header    header"
+            "div       div"
+            "h2        h2"
+            "section1  section2"
+            "section3  section3"
+            "enviar    enviar"
+            "aside     aside"
+            "footer    footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 30%;
+        justify-items: stretch;
+        height: 78vh;
+        min-height: 50vh;
+        row-gap: 10px;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Comfortaa', cursive;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gridRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+/* Enlaces button TABLET */
+.caja {
+    background-color: rgb(85, 148, 127);
+    border: 1px solid rgb(26, 94, 71);
+    border-radius: 10px;
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+    width: 130px;
+    align-self: center;
+}
+
+.caja:hover {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja:active {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja:visited {
+    background-color: rgb(201, 247, 231);
+}
+
+.caja1 {
+    background-color: rgb(85, 148, 127);
+    border: 1px solid rgb(26, 94, 71);
+    border-radius: 10px;
+    padding: 2px;
+    color: black;
+    width: 180px;
+}
+
+.caja1:hover {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja1:active {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja1:visited {
+    background-color: rgb(201, 247, 231);
+}
+
+.caja2 {
+    background-color: rgb(85, 148, 127);
+    border: 1px solid rgb(26, 94, 71);
+    border-radius: 10px;
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+    width: 70px;
+    align-self: center;
+}
+
+.caja2:hover {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja2:active {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja2:visited {
+    background-color: rgb(201, 247, 231);
+}
+
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 678px) {
+
+
+    .bodyContact {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Comfortaa', cursive;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gridRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+/* Enlaces button */
+.caja {
+    background-color: rgb(85, 148, 127);
+    border: 1px solid rgb(26, 94, 71);
+    border-radius: 10px;
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    align-self: center;
+}
+
+.caja:hover {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja:active {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja:visited {
+    background-color: rgb(201, 247, 231);
+}
+
+.caja1 {
+    background-color: rgb(85, 148, 127);
+    border: 1px solid rgb(26, 94, 71);
+    border-radius: 10px;
+    padding: 2px;
+    color: black;
+    width: 140px;
+}
+
+.caja1:hover {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja1:active {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja1:visited {
+    background-color: rgb(201, 247, 231);
+}
+
+.caja2 {
+    background-color: rgb(85, 148, 127);
+    border: 1px solid rgb(26, 94, 71);
+    border-radius: 10px;
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    align-self: center;
+}
+
+.caja2:hover {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja2:active {
+    background-color: rgb(112, 194, 167);
+}
+
+.caja2:visited {
+    background-color: rgb(201, 247, 231);
+}
+
+}
