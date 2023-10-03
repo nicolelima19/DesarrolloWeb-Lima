@@ -107,8 +107,9 @@ aside {
     justify-content: center;
     flex-direction: column;
 }
-.colorAside{
-background-color: #c191d4;
+
+.colorAside {
+    background-color: #c191d4;
 }
 
 /* Estilos para los article */
@@ -214,20 +215,11 @@ a {
 }
 
 .datos {
-    display: block;
+
     margin-bottom: 6px;
     font-weight: bold;
 }
 
-/* Estilos para el botón de envío */
-.button {
-    background-color: #dddbdb;
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
 
 /**/
 
@@ -343,7 +335,7 @@ a {
 }
 
 .margin {
-    height: 200px;
+    height: 300px;
     width: 300px;
     text-align: center;
     align-self: center;
@@ -398,9 +390,22 @@ a {
     align-items: center;
 
 }
-.colorClass{
+
+.colorClass {
     background-color: #e2c6ec;
 }
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 
 /* TABLET */
 @media screen and (max-width: 1024px) {
@@ -450,70 +455,70 @@ a {
         align-items: center;
     }
 
-/* Enlaces button TABLET */
-.caja {
-    background-color: #44015e;
-    border-radius: 10px;
-    padding: 2px;
-    text-decoration: none;
-    color: black;
-    width: 130px;
-    align-self: center;
-}
+    /* Enlaces button TABLET */
+    .caja {
+        background-color: #44015e;
+        border-radius: 10px;
+        padding: 2px;
+        text-decoration: none;
+        color: black;
+        width: 130px;
+        align-self: center;
+    }
 
-.caja:hover {
-    background-color: rgb(112, 194, 167);
-}
+    .caja:hover {
+        background-color: rgb(112, 194, 167);
+    }
 
-.caja:active {
-    background-color: rgb(112, 194, 167);
-}
+    .caja:active {
+        background-color: rgb(112, 194, 167);
+    }
 
-.caja:visited {
-    background-color: rgb(201, 247, 231);
-}
+    .caja:visited {
+        background-color: rgb(201, 247, 231);
+    }
 
-.caja1 {
-    background-color: 44015e;
-    border-radius: 10px;
-    padding: 2px;
-    color: black;
-    width: 180px;
-}
+    .caja1 {
+        background-color: 44015e;
+        border-radius: 10px;
+        padding: 2px;
+        color: black;
+        width: 180px;
+    }
 
-.caja1:hover {
-    background-color: rgb(112, 194, 167);
-}
+    .caja1:hover {
+        background-color: rgb(112, 194, 167);
+    }
 
-.caja1:active {
-    background-color: rgb(112, 194, 167);
-}
+    .caja1:active {
+        background-color: rgb(112, 194, 167);
+    }
 
-.caja1:visited {
-    background-color: rgb(201, 247, 231);
-}
+    .caja1:visited {
+        background-color: rgb(201, 247, 231);
+    }
 
-.caja2 {
-    background-color: #44015e;
-    border-radius: 10px;
-    padding: 2px;
-    text-decoration: none;
-    color: black;
-    width: 70px;
-    align-self: center;
-}
+    .caja2 {
+        background-color: #44015e;
+        border-radius: 10px;
+        padding: 2px;
+        text-decoration: none;
+        color: black;
+        width: 70px;
+        align-self: center;
+    }
 
-.caja2:hover {
-    background-color: rgb(112, 194, 167);
-}
+    .caja2:hover {
+        background-color: rgb(112, 194, 167);
+    }
 
-.caja2:active {
-    background-color: rgb(112, 194, 167);
-}
+    .caja2:active {
+        background-color: rgb(112, 194, 167);
+    }
 
-.caja2:visited {
-    background-color: rgb(201, 247, 231);
-}
+    .caja2:visited {
+        background-color: rgb(201, 247, 231);
+    }
 
 }
 
@@ -547,75 +552,76 @@ a {
         align-items: center;
     }
 
-/* Enlaces button */
-.caja {
-    background-color: #44015e;
-    border-radius: 10px;
-    padding: 2px;
-    text-decoration: none;
-    color: black;
-    width: 100px;
-    align-self: center;
+    /* Enlaces button */
+    .caja {
+        background-color: #44015e;
+        border-radius: 10px;
+        padding: 2px;
+        text-decoration: none;
+        color: black;
+        width: 100px;
+        align-self: center;
+    }
+
+    .caja:hover {
+        background-color: rgb(112, 194, 167);
+    }
+
+    .caja:active {
+        background-color: rgb(112, 194, 167);
+    }
+
+    .caja:visited {
+        background-color: rgb(201, 247, 231);
+    }
+
+    .caja1 {
+        background-color: #44015e;
+        border-radius: 10px;
+        padding: 2px;
+        color: black;
+        width: 140px;
+    }
+
+    .caja1:hover {
+        background-color: rgb(112, 194, 167);
+    }
+
+    .caja1:active {
+        background-color: rgb(112, 194, 167);
+    }
+
+    .caja1:visited {
+        background-color: rgb(201, 247, 231);
+    }
+
+    .caja2 {
+        background-color: #44015e;
+        border-radius: 10px;
+        padding: 2px;
+        text-decoration: none;
+        width: 50px;
+        align-self: center;
+    }
+
+    .caja2:hover {
+        background-color: rgb(112, 194, 167);
+    }
+
+    .caja2:active {
+        background-color: rgb(112, 194, 167);
+    }
+
+    .caja2:visited {
+        background-color: rgb(201, 247, 231);
+    }
+
 }
 
-.caja:hover {
-    background-color: rgb(112, 194, 167);
-}
-
-.caja:active {
-    background-color: rgb(112, 194, 167);
-}
-
-.caja:visited {
-    background-color: rgb(201, 247, 231);
-}
-
-.caja1 {
-    background-color: #44015e;
-    border-radius: 10px;
-    padding: 2px;
-    color: black;
-    width: 140px;
-}
-
-.caja1:hover {
-    background-color: rgb(112, 194, 167);
-}
-
-.caja1:active {
-    background-color: rgb(112, 194, 167);
-}
-
-.caja1:visited {
-    background-color: rgb(201, 247, 231);
-}
-
-.caja2 {
-    background-color: #44015e;
-    border-radius: 10px;
-    padding: 2px;
-    text-decoration: none;
-    width: 50px;
-    align-self: center;
-}
-
-.caja2:hover {
-    background-color: rgb(112, 194, 167);
-}
-
-.caja2:active {
-    background-color: rgb(112, 194, 167);
-}
-
-.caja2:visited {
-    background-color: rgb(201, 247, 231);
-}
-
-}
 /*
  PALETA DE COLORES
     color: #000000;
     color: #44015e;
-    color: #e2c6ec; 
+    color: #e2c6ec;
 
 */

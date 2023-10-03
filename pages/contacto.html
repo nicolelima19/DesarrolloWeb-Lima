@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
     <title>Coral Eventos | Contacto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,25 +15,37 @@
         rel="stylesheet">
 </head>
 
-<body class="bodyContact">
+<body>
     <!-- Header -->
     <header class="headerGrid">
-        <!-- Portada -->
-        <div>
-            <a href="../index.html" style="text-decoration: none;">
-                <h1>Coral Eventos</h1>
-            </a>
-        </div>
         <!-- Navbar -->
-        <nav class="navbar">
-            <ul>
-                <tr><a href="../index.html">Home</a></tr>
-                <tr><a href="./quienessomos.html">Quienes somos</a></tr>
-                <tr><a href="./nuestrostrabajos.html">Nuestros trabajos</a></tr>
-                <tr><a href="./servicios.html">Servicios</a></tr>
-                <tr><a href="./contacto.html">Contacto</a></tr>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><h1>Coral Eventos</h1></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ol class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./quienessomos.html">¿Quienes somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nuestrostrabajos.html">Nuestros trabajos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Contacto</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
@@ -42,72 +54,85 @@
         </div>
 
         <!-- Grid section -->
-
         <h2 class="h2Grid">¡Contacta con nosotros!</h2>
-        <section class="alingContact">
-            <section class="section1" class="contactoMain" action="">
-                <fieldset class="margin">
-                    <legend class="datos">Datos de contacto</legend>
-                    <label class="label" for="nombre">Ingrese su nombre:</label>
-                    <input class="input" required placeholder="María" id="nombre" type="text">
-                    <br><br>
-                    <label class="label" for="apellido">Ingrese su apellido:</label>
-                    <input class="input" required placeholder="Rodríguez" id="apellido" type="text">
-                    <br><br>
-                    <label class="label" for="email">Ingrese su e-mail:</label>
-                    <input class="input" required placeholder="aaaaaa@gmail.com" id="email" type="email">
-                </fieldset>
-            </section>
+        <div class="container text-center style">
+            <div class="row">
+                <div class="col">
+                    <section class="alingContact">
+                        <section class="contactoMain" action="">
+                            <fieldset class="margin">
+                                <legend class="datos">Datos de contacto</legend>
+                                <label class="label" for="nombre">Ingrese su nombre:</label>
+                                <input class="input" required placeholder="María" id="nombre" type="text">
+                                <br><br>
+                                <label class="label" for="apellido">Ingrese su apellido:</label>
+                                <input class="input" required placeholder="Rodríguez" id="apellido" type="text">
+                                <br><br>
+                                <label class="label" for="email">Ingrese su e-mail:</label>
+                                <input class="input" required placeholder="aaaaaa@gmail.com" id="email" type="email">
+                            </fieldset>
+                        </section>
+                </div>
+                <div class="col">
+                    <section class="contactoMain" action="">
+                        <fieldset class="margin">
+                            <legend class="datos">Datos de contacto</legend>
+                            <label class="label" for="personas">Ingrese cantidad de personas</label>
+                            <input class="input" type="number" required placeholder="150" id="personas" type="text">
+                            <br><br>
+                            <label class="label" for="Servicio">Ingrese tipo de servicio</label>
+                            <select name="" id="Servicio">
+                                <option value="">Catering tipo Buffet</option>
+                                <option value="">Catering tipo Cóctel</option>
+                                <option value="">Catering tipo desayunos/coffee</option>
+                                <option value="">Catering tipo aperitivos</option>
+                                <option value="">Catering tipo Brunch</option>
+                                <option value="">Catering tipo Banquete</option>
+                                <option value="">Catering tipo servicio movil</option>
+                                <option value="">Catering tipo a domicilio</option>
+                                <option value="">Cartas de vinos</option>
+                                <option value="">Otros</option>
+                            </select>
+                            <br>
+                            <p class="textoRecordatorio">
+                                *No es un campo requerido,
+                                <br>
+                                pero nos seria de mucha ayuda,
+                                <br>
+                                para poder ser mas eficientes para ti*
+                            </p>
+                        </fieldset>
+                    </section>
+                </div>
+                <div class="col">
+                    <section action="" class="contactoMain">
+                        <fieldset class="margin">
+                            <legend class="datos">Informacion sobre el evento</legend>
+                            <label class="label" for="consulta">Escriba su consulta:</label>
+                            <textarea style="font-family: Georgia, 'Times New Roman', Times, serif;" required
+                                placeholder="Escriba aquí" name="" id="consulta" cols="30" rows="5"></textarea>
+                            <br>
+                            <label class="label" for="tipo_de_evento">Seleccione una opción:</label>
+                            <select required name="" id="Tipo_de_evento">
+                                <option value="">Eventos empresariales</option>
+                                <option value="">Eventos de cumpleaños</option>
+                                <option value="">Eventos de boda</option>
+                                <option value="">Eventos en domicilio</option>
+                                <option value="">Babyshower</option>
+                                <option value="">Despedidas</option>
+                                <option value="">Otros</option>
+                            </select>
+                        </fieldset>
+                    </section>
+                    </section>
+                </div>
+            </div>
 
-            <section class="section3" class="contactoMain" action="">
-                <fieldset class="margin">
-                    <legend class="datos">Datos de contacto</legend>
-                    <label class="label" for="personas">Ingrese cantidad de personas</label>
-                    <input class="input" type="number" required placeholder="150" id="personas" type="text">
-                    <br><br>
-                    <label class="label" for="Servicio">In grese tipo de servicio</label>
-                    <select name="" id="Servicio">
-                        <option value="">Catering tipo Buffet</option>
-                        <option value="">Catering tipo Cóctel</option>
-                        <option value="">Catering tipo desayunos/coffee</option>
-                        <option value="">Catering tipo aperitivos o Cartas de vinos</option>
-                        <option value="">Catering tipo Brunch</option>
-                        <option value="">Catering tipo Banquete</option>
-                        <option value="">Catering tipo servicio movil</option>
-                        <option value="">Catering tipo a domicilio</option>
-                        <option value="">Otros</option>
-                    </select>
-                    <br>
-                    <p class="textoRecordatorio">
-                        *No es un campo requerido, pero nos seria de mucha ayuda, para poder ser mas eficientes para ti*
-                    </p>
-                </fieldset>
-            </section>
-
-            <section class="section2" action="" class="contactoMain">
-                <fieldset class="margin">
-                    <legend class="datos">Informacion sobre el evento</legend>
-                    <label class="label" for="consulta">Escriba su consulta:</label>
-                    <textarea style="font-family: Georgia, 'Times New Roman', Times, serif;" required
-                        placeholder="Escriba aquí" name="" id="consulta" cols="30" rows="5"></textarea>
-                    <br><br>
-                    <label class="label" for="tipo_de_evento">Seleccione una opción:</label>
-                    <select required name="" id="Tipo_de_evento">
-                        <option value="">Eventos empresariales</option>
-                        <option value="">Eventos de cumpleaños</option>
-                        <option value="">Eventos de boda</option>
-                        <option value="">Eventos en domicilio</option>
-                        <option value="">Babyshower</option>
-                        <option value="">Despedidas</option>
-                        <option value="">Otros</option>
-                    </select>
-                </fieldset>
-            </section>
-        </section>
-        <section class="enviarGrid">
-            <input class="button" type="submit" value="Enviar">
-            </form>
-        </section>
+        </div>
+        <br><br>
+        <div class="">
+            <button type="button" class="btn btn-outline-primary" disabled>Enviar</button>
+        </div>
     </main>
 
     <!-- Aside -->
