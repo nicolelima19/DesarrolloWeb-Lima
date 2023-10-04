@@ -8,19 +8,30 @@ body {
     background-color: white;
 }
 
-
-
 h1 {
-
     text-align: center;
     font-size: 50px;
     color: white;
+}
+
+.h1Trabajo {
+    color: black;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.h2Trabajo {
+    color: black;
+    font-size: 25px;
+    text-decoration: underline;
 }
 
 /* Estilos para la barra de navegación */
 .navbar {
     text-align: center;
     background-color: rgb(0, 0, 0);
+    position: end;
+    z-index: 1000;
 }
 
 .navbar a {
@@ -86,7 +97,6 @@ h3 {
 }
 
 h2 {
-
     text-align: center;
     font-style: oblique;
     font-size: 20px;
@@ -134,6 +144,7 @@ p {
     align-items: center;
 }
 
+/* Enlaces */
 a {
     display: flex;
     flex-direction: row;
@@ -144,16 +155,13 @@ a {
     border-radius: 5px;
 }
 
-/* Estilos para un contenedor article */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;
-
+.aWhite {
+    color: white;
+    text-decoration: none;
 }
+
+/* Estilos para un contenedor article */
+
 
 .sectionA {
     display: flex;
@@ -167,8 +175,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 100px;
     width: 300px;
     padding: 10px;
+    text-align: center;
     border: 1px solid #ddd;
     margin-bottom: 10px;
     background-color: #e2c6ec;
@@ -223,7 +235,7 @@ a {
     padding: 2px;
     text-decoration: none;
     width: 130px;
-    align-self: center;
+    justify-self: center;
 }
 
 .caja:hover {
@@ -298,7 +310,6 @@ a {
 }
 
 
-
 .margin {
     height: 300px;
     width: 300px;
@@ -353,7 +364,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 .colorClass {
@@ -361,16 +371,13 @@ a {
 }
 
 .row {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-
 
 /* TABLET */
 @media screen and (max-width: 1024px) {
