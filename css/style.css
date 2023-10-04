@@ -18,23 +18,16 @@ h1 {
 }
 
 /* Estilos para la barra de navegación */
-.navbar ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    padding: 1px 1px;
-
+.navbar {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
 }
 
 .navbar a {
-    background-color: #44015e;
     color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin: 0 15px;
 }
+
+
 
 /* Estilos para la sección principal (main) */
 main {
@@ -305,34 +298,6 @@ a {
 }
 
 
-
-.section1 {
-    grid-area: section1;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-
-.section2 {
-    grid-area: section2;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.section3 {
-    grid-area: section3;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
 .margin {
     height: 300px;
