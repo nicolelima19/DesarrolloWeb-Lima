@@ -24,6 +24,9 @@
         flex-wrap: wrap;
     }
 
+    .gridRow {
+        overflow: hidden;
+    }
 
     // Enlaces button TABLET
     .caja {
@@ -35,7 +38,6 @@
         width: 130px;
         align-self: center;
         transition: background-color 1s;
-        overflow: hidden;
 
         .caja:hover {
             background-color: $colorGreen;
@@ -57,7 +59,6 @@
         color: $colorPrimario;
         width: 180px;
         transition: background-color 1s;
-        overflow: hidden;
 
         .caja1:hover {
             background-color: $colorGreen;
@@ -81,7 +82,6 @@
         width: 70px;
         align-self: center;
         transition: background-color 1s;
-        overflow: hidden;
 
         .caja2:hover {
             background-color: $colorGreen;
@@ -95,6 +95,7 @@
             background-color: $colorVisited;
         }
     }
+
 }
 
 // MOBILE 
@@ -143,7 +144,6 @@
         width: 100px;
         align-self: center;
         transition: background-color 1s;
-        overflow: hidden;
 
         .caja:hover {
             background-color: $colorGreen;
@@ -165,7 +165,6 @@
         color: $colorPrimario;
         width: 140px;
         transition: background-color 1s;
-        overflow: hidden;
 
         .caja1:hover {
             background-color: $colorGreen;
@@ -188,7 +187,6 @@
         width: 50px;
         align-self: center;
         transition: background-color 1s;
-        overflow: hidden;
 
         .caja2:hover {
             background-color: $colorGreen;
