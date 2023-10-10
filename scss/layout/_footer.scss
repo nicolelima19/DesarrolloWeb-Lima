@@ -1,0 +1,28 @@
+// Estilos para el pie de página (footer)
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #44015e;
+    color: white;
+}
+
+.enlacesFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        @extend .enlacesFooter;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.iconosRedes {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-around;
+}

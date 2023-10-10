@@ -15,7 +15,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="bodyContacto">
     <!-- Header -->
     <header class="headerGrid">
         <!-- Navbar -->
@@ -52,80 +52,72 @@
     </header>
 
     <main>
-        <div class="divGrid">
-            <h1 class="h1Trabajo" style="text-decoration: underline;">Contacto</h1>
-        </div>
-
+        <br><br><br>
         <!-- Grid section -->
-        <h2 class="h2Grid">¡Contacta con nosotros!</h2>
+        <h1 class="h2Grid">¡Contacta con nosotros!</h1>
+        <br><br>
         <div class="container text-center">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 ">
                     <section class="alingContact">
                         <section class="contactoMain" action="">
-                            <fieldset class="margin">
-                                <legend class="datos">Datos de contacto</legend>
-                                <label class="label" for="nombre">Ingrese su nombre:</label>
-                                <input class="input" required placeholder="María" id="nombre" type="text">
-                                <br><br>
-                                <label class="label" for="apellido">Ingrese su apellido:</label>
-                                <input class="input" required placeholder="Rodríguez" id="apellido" type="text">
-                                <br><br>
-                                <label class="label" for="email">Ingrese su e-mail:</label>
-                                <input class="input" required placeholder="aaaaaa@gmail.com" id="email" type="email">
-                            </fieldset>
+                            <legend class="datos">Datos de contacto</legend>
+                            <label class="label" for="nombre">Ingrese su nombre:</label>
+                            <input class="input" required placeholder="María" id="nombre" type="text">
+                            <br><br>
+                            <label class="label" for="apellido">Ingrese su apellido:</label>
+                            <input class="input" required placeholder="Rodríguez" id="apellido" type="text">
+                            <br><br>
+                            <label class="label" for="email">Ingrese su e-mail:</label>
+                            <input class="input" required placeholder="aaaaaa@gmail.com" id="email" type="email">
                         </section>
                 </div>
                 <div class="col-4">
-                    <section class="alingContact" class="contactoMain" action="">
-                        <fieldset class="margin">
-                            <legend class="datos">Datos de contacto</legend>
-                            <label class="label" for="personas">Ingrese cantidad de personas</label>
-                            <input class="input" type="number" required placeholder="150" id="personas" type="text">
-                            <br><br>
-                            <label class="label" for="Servicio">Ingrese tipo de servicio</label>
-                            <select name="" id="Servicio">
-                                <option value="">Catering tipo Buffet</option>
-                                <option value="">Catering tipo Cóctel</option>
-                                <option value="">Catering tipo desayunos/coffee</option>
-                                <option value="">Catering tipo aperitivos</option>
-                                <option value="">Catering tipo Brunch</option>
-                                <option value="">Catering tipo Banquete</option>
-                                <option value="">Catering tipo servicio movil</option>
-                                <option value="">Catering tipo a domicilio</option>
-                                <option value="">Cartas de vinos</option>
-                                <option value="">Otros</option>
-                            </select>
-                            <br><br>
-                            <p class="textoRecordatorio">
-                                *No es un campo requerido,
-                                <br>
-                                pero nos seria de mucha ayuda,
-                                <br>
-                                para poder ser mas eficientes para ti*
-                            </p>
-                        </fieldset>
+                    <section class="contactoMain" class="contactoMain" action="">
+                        <legend class="datos">Datos de contacto</legend>
+                        <label class="label" for="personas">Ingrese cantidad de personas</label>
+                        <input class="input" type="number" required placeholder="150" id="personas" type="text">
+                        <br><br>
+                        <label class="label" for="Servicio">Ingrese tipo de servicio</label>
+                        <select name="" id="Servicio">
+                            <option value="">Catering tipo Buffet</option>
+                            <option value="">Catering tipo Cóctel</option>
+                            <option value="">Catering tipo desayunos/coffee</option>
+                            <option value="">Catering tipo aperitivos</option>
+                            <option value="">Catering tipo Brunch</option>
+                            <option value="">Catering tipo Banquete</option>
+                            <option value="">Catering tipo servicio movil</option>
+                            <option value="">Catering tipo a domicilio</option>
+                            <option value="">Cartas de vinos</option>
+                            <option value="">Otros</option>
+                        </select>
+                        <br><br>
+                        <p class="textoRecordatorio">
+                            *No es un campo requerido,
+                            <br>
+                            pero nos seria de mucha ayuda,
+                            <br>
+                            para poder ser mas eficientes para ti*
+                        </p>
                     </section>
                 </div>
                 <div class="col-4">
-                    <section class="alingContact" action="" class="contactoMain">
-                        <fieldset class="margin">
-                            <legend class="datos">Informacion sobre el evento</legend>
-                            <label class="label" for="consulta">Escriba su consulta:</label>
-                            <textarea style="font-family: Georgia, 'Times New Roman', Times, serif;" required
-                                placeholder="Escriba aquí" name="" id="consulta" cols="30" rows="5"></textarea>
-                            <br>
-                            <label class="label" for="tipo_de_evento">Seleccione una opción:</label>
-                            <select required name="" id="Tipo_de_evento">
-                                <option value="">Eventos empresariales</option>
-                                <option value="">Eventos de cumpleaños</option>
-                                <option value="">Eventos de boda</option>
-                                <option value="">Eventos en domicilio</option>
-                                <option value="">Babyshower</option>
-                                <option value="">Despedidas</option>
-                                <option value="">Otros</option>
-                            </select>
-                        </fieldset>
+                    <section class="contactoMain" action="" class="contactoMain">
+                        <legend class="datos">Informacion sobre el evento</legend>
+                        <label class="label" for="consulta">Escriba su consulta:</label>
+                        <textarea style="font-family: Georgia, 'Times New Roman', Times, serif;" required
+                            placeholder="Escriba aquí" name="" id="consulta" cols="30" rows="5"></textarea>
+                        <br>
+                        <label class="label" for="tipo_de_evento">Seleccione una opción:</label>
+                        <select required name="" id="Tipo_de_evento">
+                            <option value="">Eventos empresariales</option>
+                            <option value="">Eventos de cumpleaños</option>
+                            <option value="">Eventos de boda</option>
+                            <option value="">Eventos en domicilio</option>
+                            <option value="">Babyshower</option>
+                            <option value="">Despedidas</option>
+                            <option value="">Otros</option>
+                        </select>
                     </section>
                     </section>
                 </div>
@@ -133,7 +125,7 @@
 
         </div>
         <br><br>
-        <div class="">
+        <div>
             <button type="button" class="btn btn-outline-primary" disabled>Enviar</button>
         </div>
     </main>

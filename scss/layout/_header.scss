@@ -1,0 +1,17 @@
+// Estilos para el encabezado (header) 
+header {
+    padding: 20px;
+    background-color: black;
+
+    // Estilos para la barra de navegación
+    .navbar {
+        text-align: center;
+        background-color: black;
+        position: end;
+        z-index: 1000;
+
+        a {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+// Estilos para la sección principal (main) 
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+// Estilos para un elemento dentro del contenedor 
+.item {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 100px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+
+
+    // Enlaces button
+    .caja {
+        background-color: #44015e;
+        border-radius: 10px;
+        padding: 2px;
+        text-decoration: none;
+        width: 130px;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .caja:hover {
+        background-color: rgb(112, 194, 167);
+    }
+
+    .caja:active {
+        background-color: rgb(112, 194, 167);
+    }
+
+    .caja:visited {
+        background-color: rgb(201, 247, 231);
+    }
+
+    .colorClass {
+        background-color: #e2c6ec;
+
+    }
+
+    .caja2 {
+        background-color: #44015e;
+        border-radius: 10px;
+        padding: 2px;
+        text-decoration: none;
+        color: white;
+        width: 70px;
+        align-self: center;
+    }
+
+    .caja2:hover {
+        background-color: rgb(112, 194, 167);
+    }
+
+    .caja2:active {
+        background-color: rgb(112, 194, 167);
+    }
+
+    .caja2:visited {
+        background-color: rgb(201, 247, 231);
+    }
+}
+
+// Estilos para las secciones 
+.infoMain {
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    text-size-adjust: 30px;
+}
+
+.caja1 {
+    background-color: #44015e;
+    border-radius: 10px;
+    padding: 2px;
+    color: white;
+    width: 180px;
+    align-self: center;
+
+    .caja1:hover {
+        background-color: rgb(112, 194, 167);
+    }
+
+    .caja1:active {
+        background-color: rgb(112, 194, 167);
+    }
+
+    .caja1:visited {
+        background-color: rgb(201, 247, 231);
+    }
+}
