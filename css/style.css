@@ -284,6 +284,9 @@ aside .asideA {
     display: flex;
     flex-wrap: wrap;
   }
+  .gridRow {
+    overflow: hidden;
+  }
   .caja {
     background-color: #44015e;
     border-radius: 10px;
@@ -365,6 +368,7 @@ aside .asideA {
   .gridRow {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
   .caja {
     background-color: #44015e;
