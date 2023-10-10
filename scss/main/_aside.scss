@@ -1,13 +1,16 @@
+@import "../utils/variables";
+
+
 aside {
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: black;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.700);
+    color: $colorPrimario;
+    box-shadow: 0 2px 5px $colorPrimario;
 
 
     .asideA {
-        color: black;
+        color: $colorPrimario;
         text-decoration: none;
     }
 }

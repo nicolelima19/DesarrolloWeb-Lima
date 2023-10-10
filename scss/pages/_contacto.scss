@@ -1,8 +1,11 @@
+@import "../utils/variables";
+
+
 //Contacto 
 /* Estilos para el formulario */
 
-.h1Trabajo{
-    color: black;
+.h1Trabajo {
+    color: $colorPrimario;
 }
 
 .container {
@@ -21,12 +24,14 @@
     font-size: 12px;
 }
 
-.input .textarea {
+.input {
+    .textarea {
         width: 100%;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
     }
+}
 
 .datos {
     font-size: 20px;

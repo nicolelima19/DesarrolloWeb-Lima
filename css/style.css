@@ -21,6 +21,10 @@ main {
   padding: 20px;
 }
 
+.data {
+  overflow: hidden;
+}
+
 .item {
   justify-content: center;
   display: grid;
@@ -40,6 +44,7 @@ main {
   width: 130px;
   justify-self: center;
   text-align: center;
+  transition: background-color 1s;
 }
 .item .caja:hover {
   background-color: rgb(112, 194, 167);
@@ -61,6 +66,7 @@ main {
   color: white;
   width: 70px;
   align-self: center;
+  transition: background-color 1s;
 }
 .item .caja2:hover {
   background-color: rgb(112, 194, 167);
@@ -87,6 +93,7 @@ main {
   color: white;
   width: 180px;
   align-self: center;
+  transition: background-color 1s;
 }
 .caja1 .caja1:hover {
   background-color: rgb(112, 194, 167);
@@ -130,7 +137,7 @@ article {
   background-color: #e2c6ec;
   border-radius: 8px;
   margin: 20px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 4px 4px 10px black;
 }
 
 .article2 {
@@ -253,7 +260,7 @@ aside {
   flex-direction: column;
   text-align: center;
   color: black;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 5px black;
 }
 aside .asideA {
   color: black;
@@ -281,52 +288,55 @@ aside .asideA {
     background-color: #44015e;
     border-radius: 10px;
     padding: 2px;
-    text-decoration: none;
     color: black;
+    text-decoration: none;
     width: 130px;
     align-self: center;
+    transition: background-color 1s;
   }
-  .caja:hover {
+  .caja .caja:hover {
     background-color: rgb(112, 194, 167);
   }
-  .caja:active {
+  .caja .caja:active {
     background-color: rgb(112, 194, 167);
   }
-  .caja:visited {
+  .caja .caja:visited {
     background-color: rgb(201, 247, 231);
   }
   .caja1 {
-    background-color: 44015e;
+    background-color: #44015e;
     border-radius: 10px;
     padding: 2px;
     color: black;
     width: 180px;
+    transition: background-color 1s;
   }
-  .caja1:hover {
+  .caja1 .caja1:hover {
     background-color: rgb(112, 194, 167);
   }
-  .caja1:active {
+  .caja1 .caja1:active {
     background-color: rgb(112, 194, 167);
   }
-  .caja1:visited {
+  .caja1 .caja1:visited {
     background-color: rgb(201, 247, 231);
   }
   .caja2 {
     background-color: #44015e;
     border-radius: 10px;
     padding: 2px;
-    text-decoration: none;
     color: black;
+    text-decoration: none;
     width: 70px;
     align-self: center;
+    transition: background-color 1s;
   }
-  .caja2:hover {
+  .caja2 .caja2:hover {
     background-color: rgb(112, 194, 167);
   }
-  .caja2:active {
+  .caja2 .caja2:active {
     background-color: rgb(112, 194, 167);
   }
-  .caja2:visited {
+  .caja2 .caja2:visited {
     background-color: rgb(201, 247, 231);
   }
 }
@@ -364,14 +374,15 @@ aside .asideA {
     color: black;
     width: 100px;
     align-self: center;
+    transition: background-color 1s;
   }
-  .caja:hover {
-    background-color: black;
-  }
-  .caja:active {
+  .caja .caja:hover {
     background-color: rgb(112, 194, 167);
   }
-  .caja:visited {
+  .caja .caja:active {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja .caja:visited {
     background-color: rgb(201, 247, 231);
   }
   .caja1 {
@@ -380,14 +391,15 @@ aside .asideA {
     padding: 2px;
     color: black;
     width: 140px;
+    transition: background-color 1s;
   }
-  .caja1:hover {
+  .caja1 .caja1:hover {
     background-color: rgb(112, 194, 167);
   }
-  .caja1:active {
+  .caja1 .caja1:active {
     background-color: rgb(112, 194, 167);
   }
-  .caja1:visited {
+  .caja1 .caja1:visited {
     background-color: rgb(201, 247, 231);
   }
   .caja2 {
@@ -397,14 +409,15 @@ aside .asideA {
     text-decoration: none;
     width: 50px;
     align-self: center;
+    transition: background-color 1s;
   }
-  .caja2:hover {
+  .caja2 .caja2:hover {
     background-color: rgb(112, 194, 167);
   }
-  .caja2:active {
+  .caja2 .caja2:active {
     background-color: rgb(112, 194, 167);
   }
-  .caja2:visited {
+  .caja2 .caja2:visited {
     background-color: rgb(201, 247, 231);
   }
   .datos {

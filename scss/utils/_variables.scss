@@ -4,14 +4,9 @@
 $colorPrimario: black;
 $colorSecundario: #e2c6ec;
 $colorTerceario: #44015e;
-
-//colores de tipografia
-
+$colorGreen: rgb(112, 194, 167);
+$colorVisited: rgb(201, 247, 231);
 $h1Color: white;
-$hGeneral: black;
-
-//color de p´´´´
-$pColor: black;
 
 // Mixin
 @mixin flex {

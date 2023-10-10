@@ -1,7 +1,15 @@
+@import "../utils/variables";
+
+
 // Estilos para la sección principal (main) 
 main {
     text-align: center;
     padding: 20px;
+}
+
+.data {
+    overflow: hidden;
+    
 }
 
 // Estilos para un elemento dentro del contenedor 
@@ -19,52 +27,54 @@ main {
 
     // Enlaces button
     .caja {
-        background-color: #44015e;
+        background-color: $colorTerceario;
         border-radius: 10px;
         padding: 2px;
         text-decoration: none;
         width: 130px;
         justify-self: center;
         text-align: center;
+        transition: background-color 1s;
     }
 
     .caja:hover {
-        background-color: rgb(112, 194, 167);
+        background-color: $colorGreen;
     }
 
     .caja:active {
-        background-color: rgb(112, 194, 167);
+        background-color: $colorGreen;
     }
 
     .caja:visited {
-        background-color: rgb(201, 247, 231);
+        background-color: $colorVisited;
     }
 
     .colorClass {
-        background-color: #e2c6ec;
+        background-color: $colorSecundario;
 
     }
 
     .caja2 {
-        background-color: #44015e;
+        background-color: $colorTerceario;
         border-radius: 10px;
         padding: 2px;
         text-decoration: none;
-        color: white;
+        color: $h1Color;
         width: 70px;
         align-self: center;
+        transition: background-color 1s;
     }
 
     .caja2:hover {
-        background-color: rgb(112, 194, 167);
+        background-color: $colorGreen;
     }
 
     .caja2:active {
-        background-color: rgb(112, 194, 167);
+        background-color: $colorGreen;
     }
 
     .caja2:visited {
-        background-color: rgb(201, 247, 231);
+        background-color: $colorVisited;
     }
 }
 
@@ -78,22 +88,23 @@ main {
 }
 
 .caja1 {
-    background-color: #44015e;
+    background-color: $colorTerceario;
     border-radius: 10px;
     padding: 2px;
-    color: white;
+    color: $h1Color;
     width: 180px;
     align-self: center;
+    transition: background-color 1s;
 
     .caja1:hover {
-        background-color: rgb(112, 194, 167);
+        background-color: $colorGreen;
     }
 
     .caja1:active {
-        background-color: rgb(112, 194, 167);
+        background-color: $colorGreen;
     }
 
     .caja1:visited {
-        background-color: rgb(201, 247, 231);
+        background-color: $colorVisited;
     }
 }

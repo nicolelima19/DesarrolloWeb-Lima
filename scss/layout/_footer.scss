@@ -1,10 +1,12 @@
 // Estilos para el pie de página (footer)
+@import "../utils/variables";
+
 footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #44015e;
-    color: white;
+    background-color: $colorTerceario;
+    color: $h1Color;
 }
 
 .enlacesFooter {
