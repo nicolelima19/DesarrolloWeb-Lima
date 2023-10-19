@@ -36,6 +36,7 @@ main {
   border: 1px solid #ddd;
   margin-bottom: 10px;
 }
+
 .item .caja {
   background-color: #44015e;
   border-radius: 10px;
@@ -46,18 +47,23 @@ main {
   text-align: center;
   transition: background-color 1s;
 }
+
 .item .caja:hover {
   background-color: rgb(112, 194, 167);
 }
+
 .item .caja:active {
   background-color: rgb(112, 194, 167);
 }
+
 .item .caja:visited {
   background-color: rgb(201, 247, 231);
 }
+
 .item .colorClass {
   background-color: #e2c6ec;
 }
+
 .item .caja2 {
   background-color: #44015e;
   border-radius: 10px;
@@ -68,12 +74,15 @@ main {
   align-self: center;
   transition: background-color 1s;
 }
+
 .item .caja2:hover {
   background-color: rgb(112, 194, 167);
 }
+
 .item .caja2:active {
   background-color: rgb(112, 194, 167);
 }
+
 .item .caja2:visited {
   background-color: rgb(201, 247, 231);
 }
@@ -95,12 +104,15 @@ main {
   align-self: center;
   transition: background-color 1s;
 }
+
 .caja1 .caja1:hover {
   background-color: rgb(112, 194, 167);
 }
+
 .caja1 .caja1:active {
   background-color: rgb(112, 194, 167);
 }
+
 .caja1 .caja1:visited {
   background-color: rgb(201, 247, 231);
 }
@@ -165,12 +177,14 @@ header {
   padding: 20px;
   background-color: black;
 }
+
 header .navbar {
   text-align: center;
   background-color: black;
   position: end;
   z-index: 1000;
 }
+
 header .navbar a {
   color: white;
 }
@@ -237,12 +251,14 @@ footer {
   color: white;
 }
 
-.enlacesFooter, .enlacesFooter li {
+.enlacesFooter,
+.enlacesFooter li {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .enlacesFooter li {
   padding: 0;
   margin: 0;
@@ -262,6 +278,7 @@ aside {
   color: black;
   box-shadow: 0 2px 5px black;
 }
+
 aside .asideA {
   color: black;
   text-decoration: none;
@@ -275,18 +292,22 @@ aside .asideA {
     font-family: "Comfortaa", cursive;
     font-size: 12px;
   }
+
   .alingContact {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   .navbar ul {
     display: flex;
     flex-wrap: wrap;
   }
+
   .gridRow {
     overflow: hidden;
   }
+
   .caja {
     background-color: #44015e;
     border-radius: 10px;
@@ -297,15 +318,19 @@ aside .asideA {
     align-self: center;
     transition: background-color 1s;
   }
+
   .caja .caja:hover {
     background-color: rgb(112, 194, 167);
   }
+
   .caja .caja:active {
     background-color: rgb(112, 194, 167);
   }
+
   .caja .caja:visited {
     background-color: rgb(201, 247, 231);
   }
+
   .caja1 {
     background-color: #44015e;
     border-radius: 10px;
@@ -314,15 +339,19 @@ aside .asideA {
     width: 180px;
     transition: background-color 1s;
   }
+
   .caja1 .caja1:hover {
     background-color: rgb(112, 194, 167);
   }
+
   .caja1 .caja1:active {
     background-color: rgb(112, 194, 167);
   }
+
   .caja1 .caja1:visited {
     background-color: rgb(201, 247, 231);
   }
+
   .caja2 {
     background-color: #44015e;
     border-radius: 10px;
@@ -333,16 +362,20 @@ aside .asideA {
     align-self: center;
     transition: background-color 1s;
   }
+
   .caja2 .caja2:hover {
     background-color: rgb(112, 194, 167);
   }
+
   .caja2 .caja2:active {
     background-color: rgb(112, 194, 167);
   }
+
   .caja2 .caja2:visited {
     background-color: rgb(201, 247, 231);
   }
 }
+
 @media screen and (max-width: 678px) {
   .bodyContact {
     display: flex;
@@ -353,23 +386,28 @@ aside .asideA {
     font-family: "Comfortaa", cursive;
     font-size: 12px;
   }
+
   h1 {
     font-size: 40px;
   }
+
   .navbar ul {
     display: flex;
     flex-wrap: wrap;
   }
+
   .row {
     display: grid;
     align-items: center;
     justify-items: center;
   }
+
   .gridRow {
     display: flex;
     flex-direction: column;
     overflow: hidden;
   }
+
   .caja {
     background-color: #44015e;
     border-radius: 10px;
@@ -380,15 +418,19 @@ aside .asideA {
     align-self: center;
     transition: background-color 1s;
   }
+
   .caja .caja:hover {
     background-color: rgb(112, 194, 167);
   }
+
   .caja .caja:active {
     background-color: rgb(112, 194, 167);
   }
+
   .caja .caja:visited {
     background-color: rgb(201, 247, 231);
   }
+
   .caja1 {
     background-color: #44015e;
     border-radius: 10px;
@@ -397,15 +439,19 @@ aside .asideA {
     width: 140px;
     transition: background-color 1s;
   }
+
   .caja1 .caja1:hover {
     background-color: rgb(112, 194, 167);
   }
+
   .caja1 .caja1:active {
     background-color: rgb(112, 194, 167);
   }
+
   .caja1 .caja1:visited {
     background-color: rgb(201, 247, 231);
   }
+
   .caja2 {
     background-color: #44015e;
     border-radius: 10px;
@@ -415,20 +461,25 @@ aside .asideA {
     align-self: center;
     transition: background-color 1s;
   }
+
   .caja2 .caja2:hover {
     background-color: rgb(112, 194, 167);
   }
+
   .caja2 .caja2:active {
     background-color: rgb(112, 194, 167);
   }
+
   .caja2 .caja2:visited {
     background-color: rgb(201, 247, 231);
   }
+
   .datos {
     font-size: 12px;
     font-weight: bold;
   }
 }
+
 /* Estilos para el formulario */
 .h1Trabajo {
   color: black;
