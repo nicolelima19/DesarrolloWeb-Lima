@@ -9,7 +9,7 @@ main {
 
 .data {
     overflow: hidden;
-    
+
 }
 
 // Estilos para un elemento dentro del contenedor 
@@ -17,7 +17,7 @@ main {
     justify-content: center;
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 100px;
+    grid-template-rows: 200px;
     width: 300px;
     padding: 10px;
     text-align: center;
@@ -35,18 +35,18 @@ main {
         justify-self: center;
         text-align: center;
         transition: background-color 1s;
-    }
 
-    .caja:hover {
-        background-color: $colorGreen;
-    }
+        .caja:hover {
+            background-color: $colorGreen;
+        }
 
-    .caja:active {
-        background-color: $colorGreen;
-    }
+        .caja:active {
+            background-color: $colorGreen;
+        }
 
-    .caja:visited {
-        background-color: $colorVisited;
+        .caja:visited {
+            background-color: $colorVisited;
+        }
     }
 
     .colorClass {
@@ -63,18 +63,18 @@ main {
         width: 70px;
         align-self: center;
         transition: background-color 1s;
-    }
 
-    .caja2:hover {
-        background-color: $colorGreen;
-    }
+        .caja2:hover {
+            background-color: $colorGreen;
+        }
 
-    .caja2:active {
-        background-color: $colorGreen;
-    }
+        .caja2:active {
+            background-color: $colorGreen;
+        }
 
-    .caja2:visited {
-        background-color: $colorVisited;
+        .caja2:visited {
+            background-color: $colorVisited;
+        }
     }
 }
 
@@ -85,26 +85,4 @@ main {
     margin-bottom: 2rem;
     margin-bottom: 1rem;
     text-size-adjust: 30px;
-}
-
-.caja1 {
-    background-color: $colorTerceario;
-    border-radius: 10px;
-    padding: 2px;
-    color: $h1Color;
-    width: 180px;
-    align-self: center;
-    transition: background-color 1s;
-
-    .caja1:hover {
-        background-color: $colorGreen;
-    }
-
-    .caja1:active {
-        background-color: $colorGreen;
-    }
-
-    .caja1:visited {
-        background-color: $colorVisited;
-    }
 }
