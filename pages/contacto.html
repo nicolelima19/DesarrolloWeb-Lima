@@ -18,6 +18,8 @@
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Pacifico&family=Roboto:wght@500&family=Varela+Round&display=swap"
         rel="stylesheet">
     <link rel="icon" type="icono-pagina" href="./img/icono-pagina.png" />
+    <link rel="stylesheet" media="only screen and (max-width: 1024px)" href="../css/style.css">
+    <link rel="stylesheet" media="only screen and (max-width: 678px)" href="../css/style.css">
 </head>
 
 <body class="bodyContacto">
@@ -60,9 +62,9 @@
         <!-- Grid section -->
         <h2 class="h2Grid">¡Contacta con nosotros!</h2>
         <div class="container">
-            <div class="row">
-                <div class="col-4 ">
-                    <section class="alingContact">
+            <div class="rows">
+                <div>
+                    <section>
                         <section class="contactoMain" action="">
                             <legend class="datos">Datos de contacto</legend>
                             <label class="label" for="nombre">Ingrese su nombre:</label>
@@ -74,13 +76,13 @@
                         </section>
                     </section>
                 </div>
-                <div class="col-4">
+                <div>
                     <section class="contactoMain" class="contactoMain" action="">
                         <legend class="datos">Datos de contacto</legend>
                         <label class="label" for="personas">Ingrese cantidad de personas</label>
                         <input class="input" type="number" required placeholder="150" id="personas" type="text">
                         <label class="label" for="servicio">Ingrese tipo de servicio</label>
-                        <select name="" id="servicio">
+                        <select class="select" name="" id="servicio">
                             <option value="">Catering tipo Buffet</option>
                             <option value="">Catering tipo Cóctel</option>
                             <option value="">Catering tipo desayunos/coffee</option>
@@ -99,14 +101,13 @@
                         </p>
                     </section>
                 </div>
-                <div class="col-4">
+                <div>
                     <section class="contactoMain" action="" class="contactoMain">
                         <legend class="datos">Informacion sobre el evento</legend>
                         <label class="label" for="consulta">Escriba su consulta:</label>
-                        <textarea style="font-family: Georgia, 'Times New Roman', Times, serif;" required
-                            placeholder="Escriba aquí" name="" id="consulta" cols="30" rows="5"></textarea>
+                        <textarea class="textArea" required placeholder="Escriba aquí" name="" id="consulta" cols="30" rows="5"></textarea>
                         <label class="label" for="Tipo_de_evento">Seleccione una opción:</label>
-                        <select required name="" id="Tipo_de_evento">
+                        <select class="select" required name="" id="Tipo_de_evento">
                             <option value="">Eventos empresariales</option>
                             <option value="">Eventos de cumpleaños</option>
                             <option value="">Eventos de boda</option>
@@ -121,7 +122,7 @@
             </div>
         </div>
         </div>
-        <div>
+        <div class="buttonContact">
             <button type="button" class="btn btn-outline-primary" disabled>Enviar</button>
         </div>
     </main>

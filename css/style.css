@@ -18,7 +18,6 @@ a {
 
 main {
   align-items: center;
-  padding: 20px;
 }
 
 .data {
@@ -80,7 +79,7 @@ h1 {
 }
 
 h2 {
-  padding: 10px;
+  padding: 16px;
   text-align: center;
   font-style: oblique;
   font-size: 20px;
@@ -268,7 +267,7 @@ aside .asideA {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
   body {
     padding: 0;
     margin: 0;
@@ -276,17 +275,30 @@ aside .asideA {
     font-family: "Comfortaa", cursive;
     font-size: 12px;
   }
-  .alingContact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
   .navbar ul {
     display: flex;
     flex-wrap: wrap;
   }
   .gridRow {
     overflow: hidden;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-bottom: 10px;
+  }
+  .item .pMod {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
   }
   .caja {
     background-color: #44015e;
@@ -343,21 +355,62 @@ aside .asideA {
   .caja2 .caja2:visited {
     background-color: #ce86eb;
   }
-  .container {
+  .rows {
     display: flex;
-  }
-  .container .row {
-    display: grid;
-    align-items: center;
     justify-items: center;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+    width: 200px;
+    height: 40px;
     font-size: 16px;
   }
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .textArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 300px;
+    height: 150px;
+  }
+  .select {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
   .datos {
-    margin: 0px;
-    font-size: 12px;
-    font-weight: bold;
-    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
     height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .buttonContact {
+    margin: 20px;
   }
 }
 @media screen and (max-width: 678px) {
@@ -377,17 +430,23 @@ aside .asideA {
     display: flex;
     flex-wrap: wrap;
   }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    margin: 10px;
+  .textoRecordatorio {
+    width: 200px;
   }
-  .container .row {
-    display: grid;
-    align-items: center;
+  .rows {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-items: center;
+    align-content: flex-start;
+    overflow: hidden;
+  }
+  .contactoMain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-self: center;
   }
   .gridRow {
     display: flex;
@@ -448,11 +507,55 @@ aside .asideA {
   .caja2 .caja2:visited {
     background-color: #ce86eb;
   }
-  .datos {
-    font-size: 12px;
-    font-weight: bold;
+  .label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
     width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
     height: 30px;
+    font-size: 16px;
+  }
+  .textArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 300px;
+    height: 150px;
+  }
+  .select {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+  .datos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .buttonContact {
+    margin: 20px;
   }
 }
 /* Estilos para el formulario */
@@ -460,20 +563,30 @@ aside .asideA {
   color: black;
 }
 
+.rows {
+  display: flex;
+}
+
 .container {
   display: flex;
   flex-direction: column;
+}
+
+.contactoMain {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.contactoMain .textoRecordatorio {
+  display: flex;
+  color: grey;
+  font-size: 14px;
 }
 
 .label {
   display: flex;
   margin-bottom: 6px;
   justify-content: center;
-}
-
-.textoRecordatorio {
-  color: grey;
-  font-size: 12px;
 }
 
 .input .textarea {
@@ -483,24 +596,18 @@ aside .asideA {
   border-radius: 4px;
 }
 
+.buttonContact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px;
+}
+
 .datos {
   font-size: 20px;
   margin-bottom: 6px;
   font-weight: bold;
-}
-
-.alingContact {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.contactoMain {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
 .colorClass {
