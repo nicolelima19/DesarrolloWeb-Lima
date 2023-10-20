@@ -1,0 +1,28 @@
+@import "../utils/variables";
+
+.colorClass {
+    padding: 10px;
+    align-items: center;
+
+    .caja2 {
+        background-color: $colorTerceario;
+        border-radius: 10px;
+        padding: 2px;
+        text-decoration: none;
+        width: 130px;
+        height: 25px;
+        transition: background-color 1s;
+    }
+
+    .caja2:hover {
+        background-color: $colorGreen;
+    }
+
+    .caja2:active {
+        background-color: $colorGreen;
+    }
+
+    .caja2:visited {
+        background-color: $colorVisited;
+    }
+}

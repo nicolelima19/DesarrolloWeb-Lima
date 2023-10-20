@@ -9,72 +9,63 @@ main {
 
 .data {
     overflow: hidden;
-
 }
 
 // Estilos para un elemento dentro del contenedor 
 .item {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 300px;
-    padding: 10px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid $h1Color;
     margin-bottom: 10px;
-
 
     // Enlaces button
     .caja {
+        display: flex;
         background-color: $colorTerceario;
         border-radius: 10px;
         padding: 2px;
         text-decoration: none;
         width: 130px;
-        justify-self: center;
-        text-align: center;
+        height: 25px;
         transition: background-color 1s;
+    }
 
-        .caja:hover {
-            background-color: $colorGreen;
-        }
+    .caja:hover {
+        background-color: $colorGreen;
+    }
 
-        .caja:active {
-            background-color: $colorGreen;
-        }
+    .caja:active {
+        background-color: $colorGreen;
+    }
 
-        .caja:visited {
-            background-color: $colorVisited;
-        }
+    .caja:visited {
+        background-color: $colorVisited;
     }
 
     .colorClass {
         background-color: $colorSecundario;
-
     }
 
-    .caja2 {
+    .caja1 {
         background-color: $colorTerceario;
         border-radius: 10px;
         padding: 2px;
         text-decoration: none;
-        color: $h1Color;
-        width: 70px;
-        align-self: center;
+        width: 130px;
+        height: 25px;
+        justify-self: center;
+        text-align: center;
         transition: background-color 1s;
+    }
 
-        .caja2:hover {
-            background-color: $colorGreen;
-        }
-
-        .caja2:active {
-            background-color: $colorGreen;
-        }
-
-        .caja2:visited {
-            background-color: $colorVisited;
-        }
+    .caja1:hover {
+        color: $colorGreen;
     }
 }
 

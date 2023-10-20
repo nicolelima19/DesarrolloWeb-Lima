@@ -26,65 +26,52 @@ main {
 }
 
 .item {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 300px;
-  padding: 10px;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
   text-align: center;
-  border: 1px solid #ddd;
+  border: 1px solid white;
   margin-bottom: 10px;
 }
-
 .item .caja {
+  display: flex;
   background-color: #44015e;
   border-radius: 10px;
   padding: 2px;
   text-decoration: none;
   width: 130px;
-  justify-self: center;
-  text-align: center;
+  height: 25px;
   transition: background-color 1s;
 }
-
 .item .caja:hover {
   background-color: rgb(112, 194, 167);
 }
-
 .item .caja:active {
   background-color: rgb(112, 194, 167);
 }
-
 .item .caja:visited {
-  background-color: rgb(201, 247, 231);
+  background-color: #ce86eb;
 }
-
 .item .colorClass {
   background-color: #e2c6ec;
 }
-
-.item .caja2 {
+.item .caja1 {
   background-color: #44015e;
   border-radius: 10px;
   padding: 2px;
   text-decoration: none;
-  color: white;
-  width: 70px;
-  align-self: center;
+  width: 130px;
+  height: 25px;
+  justify-self: center;
+  text-align: center;
   transition: background-color 1s;
 }
-
-.item .caja2:hover {
-  background-color: rgb(112, 194, 167);
-}
-
-.item .caja2:active {
-  background-color: rgb(112, 194, 167);
-}
-
-.item .caja2:visited {
-  background-color: rgb(201, 247, 231);
+.item .caja1:hover {
+  color: rgb(112, 194, 167);
 }
 
 .infoMain {
@@ -95,28 +82,6 @@ main {
   text-size-adjust: 30px;
 }
 
-.caja1 {
-  background-color: #44015e;
-  border-radius: 10px;
-  padding: 2px;
-  color: white;
-  width: 180px;
-  align-self: center;
-  transition: background-color 1s;
-}
-
-.caja1 .caja1:hover {
-  background-color: rgb(112, 194, 167);
-}
-
-.caja1 .caja1:active {
-  background-color: rgb(112, 194, 167);
-}
-
-.caja1 .caja1:visited {
-  background-color: rgb(201, 247, 231);
-}
-
 h1 {
   text-align: center;
   font-size: 50px;
@@ -124,6 +89,7 @@ h1 {
 }
 
 h2 {
+  padding: 10px;
   text-align: center;
   font-style: oblique;
   font-size: 20px;
@@ -134,6 +100,11 @@ h3 {
   text-align: center;
   margin: 0;
   padding: 10px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -177,16 +148,17 @@ header {
   padding: 20px;
   background-color: black;
 }
-
 header .navbar {
   text-align: center;
   background-color: black;
   position: end;
   z-index: 1000;
 }
-
 header .navbar a {
   color: white;
+}
+header .navbar .nav-link:hover {
+  color: rgb(112, 194, 167);
 }
 
 .bodyContact {
@@ -234,6 +206,7 @@ header .navbar a {
 
 .footerGrid {
   grid-area: footer;
+  padding: 10px;
 }
 
 .gridRow {
@@ -249,16 +222,16 @@ footer {
   text-align: center;
   background-color: #44015e;
   color: white;
+  padding: 10px;
 }
 
-.enlacesFooter,
-.enlacesFooter li {
+.enlacesFooter, .enlacesFooter li {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
-
 .enlacesFooter li {
   padding: 0;
   margin: 0;
@@ -278,7 +251,6 @@ aside {
   color: black;
   box-shadow: 0 2px 5px black;
 }
-
 aside .asideA {
   color: black;
   text-decoration: none;
@@ -292,22 +264,18 @@ aside .asideA {
     font-family: "Comfortaa", cursive;
     font-size: 12px;
   }
-
   .alingContact {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
   .navbar ul {
     display: flex;
     flex-wrap: wrap;
   }
-
   .gridRow {
     overflow: hidden;
   }
-
   .caja {
     background-color: #44015e;
     border-radius: 10px;
@@ -318,19 +286,15 @@ aside .asideA {
     align-self: center;
     transition: background-color 1s;
   }
-
   .caja .caja:hover {
     background-color: rgb(112, 194, 167);
   }
-
   .caja .caja:active {
     background-color: rgb(112, 194, 167);
   }
-
   .caja .caja:visited {
-    background-color: rgb(201, 247, 231);
+    background-color: #ce86eb;
   }
-
   .caja1 {
     background-color: #44015e;
     border-radius: 10px;
@@ -339,19 +303,15 @@ aside .asideA {
     width: 180px;
     transition: background-color 1s;
   }
-
   .caja1 .caja1:hover {
     background-color: rgb(112, 194, 167);
   }
-
   .caja1 .caja1:active {
     background-color: rgb(112, 194, 167);
   }
-
   .caja1 .caja1:visited {
-    background-color: rgb(201, 247, 231);
+    background-color: #ce86eb;
   }
-
   .caja2 {
     background-color: #44015e;
     border-radius: 10px;
@@ -362,20 +322,16 @@ aside .asideA {
     align-self: center;
     transition: background-color 1s;
   }
-
   .caja2 .caja2:hover {
     background-color: rgb(112, 194, 167);
   }
-
   .caja2 .caja2:active {
     background-color: rgb(112, 194, 167);
   }
-
   .caja2 .caja2:visited {
-    background-color: rgb(201, 247, 231);
+    background-color: #ce86eb;
   }
 }
-
 @media screen and (max-width: 678px) {
   .bodyContact {
     display: flex;
@@ -386,28 +342,23 @@ aside .asideA {
     font-family: "Comfortaa", cursive;
     font-size: 12px;
   }
-
   h1 {
     font-size: 40px;
   }
-
   .navbar ul {
     display: flex;
     flex-wrap: wrap;
   }
-
   .row {
     display: grid;
     align-items: center;
     justify-items: center;
   }
-
   .gridRow {
     display: flex;
     flex-direction: column;
     overflow: hidden;
   }
-
   .caja {
     background-color: #44015e;
     border-radius: 10px;
@@ -418,19 +369,15 @@ aside .asideA {
     align-self: center;
     transition: background-color 1s;
   }
-
   .caja .caja:hover {
     background-color: rgb(112, 194, 167);
   }
-
   .caja .caja:active {
     background-color: rgb(112, 194, 167);
   }
-
   .caja .caja:visited {
-    background-color: rgb(201, 247, 231);
+    background-color: #ce86eb;
   }
-
   .caja1 {
     background-color: #44015e;
     border-radius: 10px;
@@ -439,19 +386,15 @@ aside .asideA {
     width: 140px;
     transition: background-color 1s;
   }
-
   .caja1 .caja1:hover {
     background-color: rgb(112, 194, 167);
   }
-
   .caja1 .caja1:active {
     background-color: rgb(112, 194, 167);
   }
-
   .caja1 .caja1:visited {
-    background-color: rgb(201, 247, 231);
+    background-color: #ce86eb;
   }
-
   .caja2 {
     background-color: #44015e;
     border-radius: 10px;
@@ -461,25 +404,20 @@ aside .asideA {
     align-self: center;
     transition: background-color 1s;
   }
-
   .caja2 .caja2:hover {
     background-color: rgb(112, 194, 167);
   }
-
   .caja2 .caja2:active {
     background-color: rgb(112, 194, 167);
   }
-
   .caja2 .caja2:visited {
-    background-color: rgb(201, 247, 231);
+    background-color: #ce86eb;
   }
-
   .datos {
     font-size: 12px;
     font-weight: bold;
   }
 }
-
 /* Estilos para el formulario */
 .h1Trabajo {
   color: black;
@@ -526,6 +464,29 @@ aside .asideA {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.colorClass {
+  padding: 10px;
+  align-items: center;
+}
+.colorClass .caja2 {
+  background-color: #44015e;
+  border-radius: 10px;
+  padding: 2px;
+  text-decoration: none;
+  width: 130px;
+  height: 25px;
+  transition: background-color 1s;
+}
+.colorClass .caja2:hover {
+  background-color: rgb(112, 194, 167);
+}
+.colorClass .caja2:active {
+  background-color: rgb(112, 194, 167);
+}
+.colorClass .caja2:visited {
+  background-color: #ce86eb;
 }
 
 /*# sourceMappingURL=style.css.map */
