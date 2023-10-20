@@ -3,7 +3,7 @@
 
 // Estilos para la sección principal (main) 
 main {
-    text-align: center;
+    align-items: center;
     padding: 20px;
 }
 
@@ -19,18 +19,27 @@ main {
     width: 300px;
     height: 300px;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    align-items: center;
     border: 1px solid $h1Color;
     margin-bottom: 10px;
+
+    .pMod {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
 
     // Enlaces button
     .caja {
         display: flex;
         background-color: $colorTerceario;
         border-radius: 10px;
+        margin: 10px;
         padding: 2px;
         text-decoration: none;
+        justify-content: center;
         width: 130px;
         height: 25px;
         transition: background-color 1s;
@@ -46,26 +55,6 @@ main {
 
     .caja:visited {
         background-color: $colorVisited;
-    }
-
-    .colorClass {
-        background-color: $colorSecundario;
-    }
-
-    .caja1 {
-        background-color: $colorTerceario;
-        border-radius: 10px;
-        padding: 2px;
-        text-decoration: none;
-        width: 130px;
-        height: 25px;
-        justify-self: center;
-        text-align: center;
-        transition: background-color 1s;
-    }
-
-    .caja1:hover {
-        color: $colorGreen;
     }
 }
 
