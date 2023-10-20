@@ -6,10 +6,14 @@
 
 .h1Trabajo {
     color: $colorPrimario;
+    font-size: 20px;
 }
 
 .rows {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container {
@@ -21,28 +25,36 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+}
 
-    .textoRecordatorio {
-        display: flex;
-        
-        color: grey;
-        font-size: 14px;
-    }
+.textoRecordatorio {
+    width: 300px;
+    height: 100px;
+    color: grey;
+    font-size: 16px;
+    text-align: center;
 }
 
 .label {
     display: flex;
     margin-bottom: 6px;
     justify-content: center;
+    width: 300px;
+    height: 50px;
 }
 
 .input {
-    .textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+    width: 300px;
+    height: 30px;
+}
+
+
+.textArea {
+    width: 300px;
+    height: 100px;
+    border: 10px solid black;
+    border-radius: 4px;
 }
 
 .buttonContact {
@@ -53,9 +65,14 @@
     margin: 30px;
 }
 
+.select {
+    width: 300px;
+    height: 30px;
+}
 
 .datos {
     font-size: 20px;
     margin-bottom: 6px;
     font-weight: bold;
+    justify-content: center;
 }
