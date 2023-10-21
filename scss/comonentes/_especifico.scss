@@ -1,0 +1,90 @@
+@import "../utils/variables";
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: $h1Color;
+}
+
+h2 {
+    padding: 16px;
+    text-align: center;
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+}
+
+.aWhite {
+    color: $h1Color;
+    text-decoration: none;
+}
+
+.h2Trabajo {
+    color: $colorPrimario;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+// Estilos para un contenedor article 
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: $colorSecundario;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 4px 4px 10px $colorPrimario;
+}
+
+.article2 {
+    align-content: center;
+    background-color: $colorSecundario;
+}
+
+.sectionA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .caja1 {
+        background-color: $colorTerceario;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 2px;
+        text-decoration: none;
+        justify-content: center;
+        width: 200px;
+        height: 25px;
+        transition: background-color 1s;
+    }
+
+    .caja1:hover {
+        background-color: $colorGreen;
+    }
+
+    .caja1:active {
+        background-color: $colorGreen;
+    }
+
+    .caja1:visited {
+        background-color: $colorVisited;
+    }
+}

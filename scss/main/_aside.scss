@@ -1,0 +1,15 @@
+@import "../utils/variables";
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: $colorPrimario;
+    box-shadow: 0 2px 5px $colorPrimario;
+
+    .asideA {
+        color: $colorPrimario;
+        text-decoration: none;
+    }
+}

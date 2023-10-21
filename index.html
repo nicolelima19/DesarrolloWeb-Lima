@@ -4,15 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Empresa especializada en eventos de fiesta. Calidad y lujo especialzados en cada cliente.">
+    <meta name="keywords"
+        content="HTML, AUTHOR, JS, EVENTOS, EMPRESARIOS, CUMPLEAÑOS, BODAS, FIESTAS, META, LUNCH, CATERING, VINOS, GRANDE, CHICA,">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Libreria Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Coral Eventos | Home</title>
+    <title>Coral Eventos - Eventos unicos de todo tipo | Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Pacifico&family=Roboto:wght@500&family=Varela+Round&display=swap"
         rel="stylesheet" />
+    <link rel="icon" type="icono-pagina" href="./img/icono-pagina.png" />
+    <link rel="stylesheet" media="only screen and (max-width: 1080px)" href="./css/style.css">
+    <link rel="stylesheet" media="only screen and (max-width: 678px)" href="./css/style.css">
 </head>
 
 <body>
@@ -21,104 +30,101 @@
         <!-- Navbar -->
         <nav class="navbar">
             <div class="container-fluid">
-              <a class="navbar-brand" href=""><h1>Coral Eventos</h1></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ol class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/quienessomos.html">¿Quienes somos?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/nuestrostrabajos.html">Nuestros trabajos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                  </li>
-                </ol>
-              </div>
+                <a class="navbar-brand" href="">
+                    <h1>Coral Eventos</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="./img/menu.png" alt="menu-hamburgesa"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ol class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/quienessomos.html">¿Quienes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nuestrostrabajos.html">Nuestros trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ol>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
     <!-- Main: contenido principal -->
     <main>
         <!-- Portada -->
         <section class="sectionA">
-            <h2 style="text-decoration: underline">
-                Todo tipo de enventos a tu disposición
-            </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <div class="caja1">
-                <a href="./pages/contacto.html" style="text-decoration: none;">Cotizá con nosotros</a>
+            <h2 style="text-decoration: underline">Todo tipo de enventos a tu disposición</h2>
+            <p>Ofrecemos una amplia gama de servicios para cubrir cualquier tipo de evento que necesites</p>
+            <div class="caja1"><a href="./pages/contacto.html" style="text-decoration: none;">Cotizá con nosotros</a>
             </div>
         </section>
-        <br>
 
         <!-- Servicios -->
-
         <section>
-            <h2 style="text-decoration: underline">
-                ¿Que servicio te podemos ofrecer?
-            </h2>
+            <h2 style="text-decoration: underline">¿Que servicio te podemos ofrecer?</h2>
         </section>
         <section class="gridRow" class="container">
             <!-- Article servicios -->
-            <article class="item">
-                <h3>Eventos empresariales</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <div class="caja">
-                    <a href="./pages/servicios.html" style="text-decoration: none;">Presiona aquí</a>
-                </div>
-            </article>
-
-            <article class="item">
-                <h3>Eventos de cumpleaños</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <div class="caja">
-                    <a href="./pages/servicios.html" style="text-decoration: none;">Presiona aquí</a>
-                </div>
-            </article>
-
-            <article class="item">
-                <h3>Eventos de bodas</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <div class="caja">
-                    <a href="./pages/servicios.html" style="text-decoration: none;">Presiona aquí</a>
-                </div>
-            </article>
+            <div class="data" data-aos="fade-right">
+                <article class="item">
+                    <h3>Eventos empresariales</h3>
+                    <p class="pMod">Servicios para garantizar el éxito de tus eventos, adaptados a tus necesidades y objetivos corporativos.</p>
+                    <div class="caja">
+                        <a href="./pages/servicios.html" style="text-decoration: none;">Presiona aquí</a>
+                    </div>
+                </article>
+            </div>
+            <div class="data" data-aos="fade-left">
+                <article class="item">
+                    <h3>Eventos de cumpleaños</h3>
+                    <p class="pMod">Organizamos celebraciones de cumpleaños a medida, llenas de diversión y sorpresas para que tengas
+                        un día inolvidable.</p>
+                    <div class="caja">
+                        <a class="cajaEnlace" href="./pages/servicios.html" style="text-decoration: none;">Presiona
+                            aquí</a>
+                    </div>
+                </article>
+            </div>
+            <div class="data" data-aos="fade-right">
+                <article class="item">
+                    <h3>Eventos de bodas</h3>
+                    <p class="pMod">Creamos bodas mágicas y memorables, cuidando cada detalle para que tu día especial sea perfecto y
+                        único</p>
+                    <div class="caja">
+                        <a href="./pages/servicios.html" style="text-decoration: none;">Presiona
+                            aquí</a>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
     <!-- Aside -->
     <aside>
-        <article class="colorAside">
+        <article>
             <h3 style="text-decoration: underline">
                 ¡No te pierdas nuestras promociones especiales!
             </h3>
-            <p>
-                Organizamos eventos únicos y memorables para cualquier ocasión.
-                ¡Contáctanos para más información!
-            </p>
-            <p>
-                ¡Llama ahora al <strong>Teléfono: (555) 55 555 555</strong> o preciona
-                <a href="../pages/contacto.html">aquí para cotizar</a>
-            </p>
-            <address></address>
+            <p>Organizamos eventos únicos y memorables para cualquier ocasión.¡Contáctanos para más información!</p>
+            <p>¡Llama ahora al <strong>Teléfono: (555) 55 555 555</strong> o preciona <a class="asideA"
+                    href="../pages/contacto.html">aquí para cotizar</a></p>
         </article>
     </aside>
 
     <!-- Footer -->
 
     <footer class="footer">
-        <br>
         <section class="enlacesFooter">
             <ul>
                 <li><a href="">Home</a></li>
@@ -128,14 +134,10 @@
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
             <ul class="iconosRedes">
-                <tr>
-                    <a href="https://es-la.facebook.com"><img width="40" src="./img/facebook.png"
-                            alt="Enlace de facebook" /></a>
-                </tr>
-                <tr>
-                    <a href="https://www.instagram.com"><img width="40" src="./img/instagram.png"
-                            alt="Enlace de instagram" /></a>
-                </tr>
+                <tr><a target="_blank" href="https://es-la.facebook.com"><img width="40" src="./img/facebook.png"
+                            alt="enlace-de-facebook" /></a></tr>
+                <tr><a target="_blank" href="https://www.instagram.com"><img width="40" src="./img/instagram.png"
+                            alt="enlace-de-instagram" /></a></tr>
                 <tr>
                     <!-- Dirección ficticia -->
                     <iframe
@@ -152,18 +154,18 @@
                 <input id="email" type="email" />
                 <input type="submit" value="Enviar" />
             </form>
-            <br>
-            <p>
-                &copy; 2023 Empresa de eventos: CoralEventos. Todos los derechos
-                reservados.
-            </p>
+            <p>&copy; 2023 Empresa de eventos: CoralEventos. Todos los derechos reservados.</p>
         </section>
     </footer>
-
     <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,32 @@
+// Estilos para el pie de página (footer)
+@import "../utils/variables";
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $colorTerceario;
+    color: $h1Color;
+    padding: 10px;
+}
+
+.enlacesFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    li {
+        @extend .enlacesFooter;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.iconosRedes {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-around;
+}

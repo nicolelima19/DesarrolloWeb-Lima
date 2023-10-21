@@ -1,0 +1,25 @@
+// Estilos para el encabezado (header) 
+@import "../utils/variables";
+
+header {
+    padding: 20px;
+    background-color: $colorPrimario;
+
+    // Estilos para la barra de navegación
+    .navbar {
+        text-align: center;
+        background-color: $colorPrimario;
+        position: end;
+        z-index: 1000;
+
+        a {
+            color: $h1Color;
+        }
+
+        .nav-link:hover {
+            color: $colorGreen;
+        }
+    }
+
+
+}

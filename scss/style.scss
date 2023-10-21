@@ -1,0 +1,24 @@
+// Base de las páginas
+@import "./base/pordefecto";
+
+// Componentes
+@import "./comonentes/contprincipal";
+@import "./comonentes/especifico";
+
+// Layout
+@import "./layout/header";
+@import "./layout/aplicagrid";
+@import "./layout/footer";
+
+// Contenido principal main
+@import "./main/aside";
+
+// Mobile
+@import "./mobile/mobile";
+
+// Pages
+@import "./pages/contacto";
+@import "./pages/servicios";
+
+// Variables
+@import "./utils/variables";

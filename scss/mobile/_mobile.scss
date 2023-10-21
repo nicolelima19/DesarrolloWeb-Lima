@@ -1,0 +1,370 @@
+@import "../utils/variables";
+
+
+
+// TABLET 
+@media screen and (max-width: 1080px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Comfortaa', cursive;
+        font-size: 12px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gridRow {
+        overflow: hidden;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        border: 1px solid $h1Color;
+        margin-bottom: 10px;
+
+        .pMod {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 5px;
+        }
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    li{
+        font-size: 16px;
+    }
+
+    // Enlaces button TABLET
+    .caja {
+        background-color: $colorTerceario;
+        border-radius: 10px;
+        padding: 2px;
+        color: $colorPrimario;
+        text-decoration: none;
+        width: 130px;
+        align-self: center;
+        transition: background-color 1s;
+
+        .caja:hover {
+            background-color: $colorGreen;
+        }
+
+        .caja:active {
+            background-color: $colorGreen;
+        }
+
+        .caja:visited {
+            background-color: $colorVisited;
+        }
+    }
+
+    .caja1 {
+        background-color: $colorTerceario;
+        border-radius: 10px;
+        padding: 2px;
+        color: $colorPrimario;
+        width: 180px;
+        transition: background-color 1s;
+
+        .caja1:hover {
+            background-color: $colorGreen;
+        }
+
+        .caja1:active {
+            background-color: $colorGreen;
+        }
+
+        .caja1:visited {
+            background-color: $colorVisited;
+        }
+    }
+
+    .caja2 {
+        background-color: $colorTerceario;
+        border-radius: 10px;
+        padding: 2px;
+        color: $colorPrimario;
+        text-decoration: none;
+        width: 70px;
+        align-self: center;
+        transition: background-color 1s;
+
+        .caja2:hover {
+            background-color: $colorGreen;
+        }
+
+        .caja2:active {
+            background-color: $colorGreen;
+        }
+
+        .caja2:visited {
+            background-color: $colorVisited;
+        }
+    }
+
+    .rows {
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6px;
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .textArea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        width: 300px;
+        height: 150px;
+    }
+
+    .select {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 30px;
+        font-size: 16px;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+    }
+
+    .datos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        height: 50px;
+        font-size: 14px;
+        font-weight: bold;
+
+    }
+
+    .buttonContact {
+        margin: 20px;
+    }
+}
+
+
+// MOBILE 
+
+@media screen and (max-width: 678px) {
+
+    .bodyContact {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Comfortaa', cursive;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .textoRecordatorio {
+        width: 200px;
+    }
+
+    .rows {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-content: flex-start;
+        overflow: hidden;
+    }
+
+    .contactoMain {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        align-self: center;
+    }
+
+    .gridRow {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .item {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    // Enlaces button 
+    .caja {
+        background-color: $colorTerceario;
+        border-radius: 10px;
+        padding: 2px;
+        text-decoration: none;
+        color: $colorPrimario;
+        width: 100px;
+        align-self: center;
+        transition: background-color 1s;
+
+        .caja:hover {
+            background-color: $colorGreen;
+        }
+
+        .caja:active {
+            background-color: $colorGreen;
+        }
+
+        .caja:visited {
+            background-color: $colorVisited;
+        }
+    }
+
+    .caja1 {
+        background-color: $colorTerceario;
+        border-radius: 10px;
+        padding: 2px;
+        color: $colorPrimario;
+        width: 140px;
+        transition: background-color 1s;
+
+        .caja1:hover {
+            background-color: $colorGreen;
+        }
+
+        .caja1:active {
+            background-color: $colorGreen;
+        }
+
+        .caja1:visited {
+            background-color: $colorVisited;
+        }
+    }
+
+    .caja2 {
+        background-color: $colorTerceario;
+        border-radius: 10px;
+        padding: 2px;
+        text-decoration: none;
+        width: 50px;
+        align-self: center;
+        transition: background-color 1s;
+
+        .caja2:hover {
+            background-color: $colorGreen;
+        }
+
+        .caja2:active {
+            background-color: $colorGreen;
+        }
+
+        .caja2:visited {
+            background-color: $colorVisited;
+        }
+    }
+
+    .label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6px;
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .textArea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        width: 300px;
+        height: 150px;
+    }
+
+    .select {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 30px;
+        font-size: 16px;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+    }
+
+    .datos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        height: 50px;
+        font-size: 14px;
+        font-weight: bold;
+
+    }
+
+    .buttonContact {
+        margin: 20px;
+    }
+
+}

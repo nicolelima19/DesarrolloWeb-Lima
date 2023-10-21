@@ -1,599 +1,672 @@
-/* DESKSTOP */
-/* Estilos generales */
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Comfortaa', cursive;
-    background-color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  background-color: white;
+}
+
+a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+main {
+  align-items: center;
+}
+
+.data {
+  overflow: hidden;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  border: 1px solid white;
+  margin-bottom: 10px;
+}
+.item .pMod {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.item .caja {
+  display: flex;
+  background-color: #44015e;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 2px;
+  text-decoration: none;
+  justify-content: center;
+  width: 130px;
+  height: 25px;
+  transition: background-color 1s;
+}
+.item .caja:hover {
+  background-color: rgb(112, 194, 167);
+}
+.item .caja:active {
+  background-color: rgb(112, 194, 167);
+}
+.item .caja:visited {
+  background-color: #ce86eb;
+}
+
+.infoMain {
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  text-size-adjust: 30px;
 }
 
 h1 {
-    text-align: center;
-    font-size: 50px;
-    color: white;
-}
-
-.h1Trabajo {
-    color: black;
-    font-size: 35px;
-    text-decoration: underline;
-}
-
-.h2Trabajo {
-    color: black;
-    font-size: 25px;
-    text-decoration: underline;
-}
-
-/* Estilos para la barra de navegación */
-.navbar {
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    position: end;
-    z-index: 1000;
-}
-
-.navbar a {
-    color: white;
-}
-
-
-
-/* Estilos para la sección principal (main) */
-main {
-    text-align: center;
-    padding: 20px;
-}
-
-/* Estilos para el encabezado (header) */
-header {
-    padding: 20px;
-    background-color: #000000;
-    height: 140px;
-}
-
-/* Estilos para el pie de página (footer) */
-footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #44015e;
-    color: white;
-
-}
-
-.iconosRedes {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-around;
-}
-
-.enlacesFooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.enlacesFooter li {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-h3 {
-    text-align: center;
-    font-style: oblique;
-}
-
-.article2 {
-    align-content: center;
-    background-color: #e2c6ec;
+  text-align: center;
+  font-size: 50px;
+  color: white;
 }
 
 h2 {
-    text-align: center;
-    font-style: oblique;
-    font-size: 20px;
+  padding: 16px;
+  text-align: center;
+  font-style: oblique;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-aside {
-    display: flex;
-    align-items: center;
-    color: black;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.700);
-    justify-content: center;
-    flex-direction: column;
+h3 {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
 }
 
-.colorAside {
-    background-color: #c191d4;
+h4 {
+  font-size: 18px;
+  font-weight: bold;
 }
-
-/* Estilos para los article */
-article {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(202, 187, 183);
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.700);
-}
-
-.gridRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 
 p {
-    text-align: center;
-}
-
-.contactoMain {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Enlaces */
-a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-decoration: underline;
-    color: white;
-    border-radius: 5px;
+  text-align: center;
+  margin: 20px;
 }
 
 .aWhite {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-/* Estilos para un contenedor article */
+.h2Trabajo {
+  color: black;
+  font-size: 18px;
+  text-decoration: underline;
+}
 
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: #e2c6ec;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 4px 4px 10px black;
+}
+
+.article2 {
+  align-content: center;
+  background-color: #e2c6ec;
+}
 
 .sectionA {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sectionA .caja1 {
+  background-color: #44015e;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 2px;
+  text-decoration: none;
+  justify-content: center;
+  width: 200px;
+  height: 25px;
+  transition: background-color 1s;
+}
+.sectionA .caja1:hover {
+  background-color: rgb(112, 194, 167);
+}
+.sectionA .caja1:active {
+  background-color: rgb(112, 194, 167);
+}
+.sectionA .caja1:visited {
+  background-color: #ce86eb;
 }
 
-/* Estilos para un elemento dentro del contenedor */
-.item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 100px;
-    width: 300px;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    background-color: #e2c6ec;
+header {
+  padding: 20px;
+  background-color: black;
 }
-
-/* Estilos para las secciones */
-.infoMain {
-    border-radius: 8px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
-    text-size-adjust: 30px;
+header .navbar {
+  text-align: center;
+  background-color: black;
+  position: end;
+  z-index: 1000;
 }
-
-/**/
-
-/* Contacto */
-/* Estilos para el formulario */
-
-.label {
-    display: flex;
-    margin-bottom: 6px;
-    justify-content: center;
+header .navbar a {
+  color: white;
 }
-
-.textoRecordatorio {
-    color: grey;
-    font-size: 12px;
-}
-
-.input .textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.datos {
-
-    margin-bottom: 6px;
-    font-weight: bold;
-}
-
-
-/**/
-
-/* Enlaces button */
-.caja {
-    background-color: #44015e;
-    border-radius: 10px;
-    padding: 2px;
-    text-decoration: none;
-    width: 130px;
-    justify-self: center;
-}
-
-.caja:hover {
-    background-color: rgb(112, 194, 167);
-}
-
-.caja:active {
-    background-color: rgb(112, 194, 167);
-}
-
-.caja:visited {
-    background-color: rgb(201, 247, 231);
-}
-
-.caja1 {
-    background-color: #44015e;
-    border-radius: 10px;
-    padding: 2px;
-    color: white;
-    width: 180px;
-}
-
-.caja1:hover {
-    background-color: rgb(112, 194, 167);
-}
-
-.caja1:active {
-    background-color: rgb(112, 194, 167);
-}
-
-.caja1:visited {
-    background-color: rgb(201, 247, 231);
-}
-
-.caja2 {
-    background-color: #44015e;
-    border-radius: 10px;
-    padding: 2px;
-    text-decoration: none;
-    color: white;
-    width: 70px;
-    align-self: center;
-}
-
-.caja2:hover {
-    background-color: rgb(112, 194, 167);
-}
-
-.caja2:active {
-    background-color: rgb(112, 194, 167);
-}
-
-.caja2:visited {
-    background-color: rgb(201, 247, 231);
-}
-
-/* Grid contacto */
-
-.headerGrid {
-    grid-area: header;
-    height: 140px;
-
-}
-
-.divGrid {
-    grid-area: div;
-    margin: 5vh;
-}
-
-.h2Grid {
-    grid-area: h2;
-}
-
-
-.margin {
-    height: 300px;
-    width: 300px;
-    text-align: center;
-    align-self: center;
-}
-
-.enviarGrid {
-    grid-area: enviar;
-    display: flex;
-    justify-content: center;
-
-}
-
-.asideGrid {
-    grid-area: aside;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.footerGrid {
-    grid-area: footer;
+header .navbar .nav-link:hover {
+  color: rgb(112, 194, 167);
 }
 
 .bodyContact {
-    /* Grid */
-    display: grid;
-    grid-template-areas:
-        "header    header     header"
-        "div       div        div"
-        "h2        h2         h2"
-        "section1  section2   section3"
-        "enviar    enviar     enviar"
-        "aside     aside      aside"
-        "footer    footer     footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 30%;
-    justify-items: stretch;
-    height: 65vh;
-    min-height: 50vh;
-    row-gap: 10px;
+  display: grid;
+  grid-template-areas: "header    header     header" "div       div        div" "h2        h2         h2" "section1  section2   section3" "enviar    enviar     enviar" "aside     aside      aside" "footer    footer     footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 30%;
+  justify-items: stretch;
+  height: 65vh;
+  min-height: 50vh;
+  row-gap: 10px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+
+.headerGrid {
+  grid-area: header;
+}
+
+.divGrid {
+  grid-area: div;
+  margin: 5vh;
+}
+
+.h2Grid {
+  grid-area: h2;
+  color: black;
+  font-weight: bold;
+}
+
+.enviarGrid {
+  grid-area: enviar;
+  display: flex;
+  justify-content: center;
+}
+
+.asideGrid {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footerGrid {
+  grid-area: footer;
+  padding: 10px;
+}
+
+.gridRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #44015e;
+  color: white;
+  padding: 10px;
+}
+
+.enlacesFooter, .enlacesFooter li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.enlacesFooter li {
+  padding: 0;
+  margin: 0;
+}
+
+.iconosRedes {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-around;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  box-shadow: 0 2px 5px black;
+}
+aside .asideA {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1080px) {
+  body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Comfortaa', cursive;
+    font-family: "Comfortaa", cursive;
+    font-size: 12px;
+  }
+  .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gridRow {
+    overflow: hidden;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-bottom: 10px;
+  }
+  .item .pMod {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+  p {
+    font-size: 16px;
+  }
+  li {
+    font-size: 16px;
+  }
+  .caja {
+    background-color: #44015e;
+    border-radius: 10px;
+    padding: 2px;
+    color: black;
+    text-decoration: none;
+    width: 130px;
+    align-self: center;
+    transition: background-color 1s;
+  }
+  .caja .caja:hover {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja .caja:active {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja .caja:visited {
+    background-color: #ce86eb;
+  }
+  .caja1 {
+    background-color: #44015e;
+    border-radius: 10px;
+    padding: 2px;
+    color: black;
+    width: 180px;
+    transition: background-color 1s;
+  }
+  .caja1 .caja1:hover {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja1 .caja1:active {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja1 .caja1:visited {
+    background-color: #ce86eb;
+  }
+  .caja2 {
+    background-color: #44015e;
+    border-radius: 10px;
+    padding: 2px;
+    color: black;
+    text-decoration: none;
+    width: 70px;
+    align-self: center;
+    transition: background-color 1s;
+  }
+  .caja2 .caja2:hover {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja2 .caja2:active {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja2 .caja2:visited {
+    background-color: #ce86eb;
+  }
+  .rows {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .textArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 300px;
+    height: 150px;
+  }
+  .select {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+  .datos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .buttonContact {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 678px) {
+  .bodyContact {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", cursive;
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .textoRecordatorio {
+    width: 200px;
+  }
+  .rows {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: flex-start;
+    overflow: hidden;
+  }
+  .contactoMain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-self: center;
+  }
+  .gridRow {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .item {
+    font-size: 17px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .caja {
+    background-color: #44015e;
+    border-radius: 10px;
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    align-self: center;
+    transition: background-color 1s;
+  }
+  .caja .caja:hover {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja .caja:active {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja .caja:visited {
+    background-color: #ce86eb;
+  }
+  .caja1 {
+    background-color: #44015e;
+    border-radius: 10px;
+    padding: 2px;
+    color: black;
+    width: 140px;
+    transition: background-color 1s;
+  }
+  .caja1 .caja1:hover {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja1 .caja1:active {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja1 .caja1:visited {
+    background-color: #ce86eb;
+  }
+  .caja2 {
+    background-color: #44015e;
+    border-radius: 10px;
+    padding: 2px;
+    text-decoration: none;
+    width: 50px;
+    align-self: center;
+    transition: background-color 1s;
+  }
+  .caja2 .caja2:hover {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja2 .caja2:active {
+    background-color: rgb(112, 194, 167);
+  }
+  .caja2 .caja2:visited {
+    background-color: #ce86eb;
+  }
+  .label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .textArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 300px;
+    height: 150px;
+  }
+  .select {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+  .datos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .buttonContact {
+    margin: 20px;
+  }
+}
+/* Estilos para el formulario */
+.h1Trabajo {
+  color: black;
+  font-size: 20px;
 }
 
-.alingContact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+.rows {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactoMain {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.textoRecordatorio {
+  width: 300px;
+  height: 100px;
+  color: grey;
+  font-size: 16px;
+  text-align: center;
+}
+
+.label {
+  display: flex;
+  margin-bottom: 6px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+}
+
+.input {
+  width: 300px;
+  height: 30px;
+}
+
+.textArea {
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.buttonContact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+.select {
+  width: 300px;
+  height: 30px;
+}
+
+.datos {
+  font-size: 20px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  justify-content: center;
 }
 
 .colorClass {
-    background-color: #e2c6ec;
+  padding: 10px;
+  align-items: center;
+}
+.colorClass .caja2 {
+  background-color: #44015e;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 2px;
+  text-decoration: none;
+  justify-content: center;
+  width: 80px;
+  height: 25px;
+  transition: background-color 1s;
+}
+.colorClass .caja2:hover {
+  background-color: rgb(112, 194, 167);
+}
+.colorClass .caja2:active {
+  background-color: rgb(112, 194, 167);
+}
+.colorClass .caja2:visited {
+  background-color: #ce86eb;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-/* TABLET */
-@media screen and (max-width: 1024px) {
-
-    body {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Comfortaa', cursive;
-        font-size: 12px;
-    }
-
-    .bodyContact {
-        /* Grid */
-        display: grid;
-        grid-template-areas:
-            "header    header"
-            "div       div"
-            "h2        h2"
-            "section1  section2"
-            "section3  section3"
-            "enviar    enviar"
-            "aside     aside"
-            "footer    footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 30%;
-        justify-items: stretch;
-        height: 78vh;
-        min-height: 50vh;
-        row-gap: 10px;
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Comfortaa', cursive;
-    }
-
-    .navbar ul {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .gridRow {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Enlaces button TABLET */
-    .caja {
-        background-color: #44015e;
-        border-radius: 10px;
-        padding: 2px;
-        text-decoration: none;
-        color: black;
-        width: 130px;
-        align-self: center;
-    }
-
-    .caja:hover {
-        background-color: rgb(112, 194, 167);
-    }
-
-    .caja:active {
-        background-color: rgb(112, 194, 167);
-    }
-
-    .caja:visited {
-        background-color: rgb(201, 247, 231);
-    }
-
-    .caja1 {
-        background-color: 44015e;
-        border-radius: 10px;
-        padding: 2px;
-        color: black;
-        width: 180px;
-    }
-
-    .caja1:hover {
-        background-color: rgb(112, 194, 167);
-    }
-
-    .caja1:active {
-        background-color: rgb(112, 194, 167);
-    }
-
-    .caja1:visited {
-        background-color: rgb(201, 247, 231);
-    }
-
-    .caja2 {
-        background-color: #44015e;
-        border-radius: 10px;
-        padding: 2px;
-        text-decoration: none;
-        color: black;
-        width: 70px;
-        align-self: center;
-    }
-
-    .caja2:hover {
-        background-color: rgb(112, 194, 167);
-    }
-
-    .caja2:active {
-        background-color: rgb(112, 194, 167);
-    }
-
-    .caja2:visited {
-        background-color: rgb(201, 247, 231);
-    }
-
-}
-
-/* MOBILE */
-
-@media screen and (max-width: 678px) {
-
-
-    .bodyContact {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Comfortaa', cursive;
-        font-size: 12px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    .navbar ul {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .gridRow {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Enlaces button */
-    .caja {
-        background-color: #44015e;
-        border-radius: 10px;
-        padding: 2px;
-        text-decoration: none;
-        color: black;
-        width: 100px;
-        align-self: center;
-    }
-
-    .caja:hover {
-        background-color: rgb(112, 194, 167);
-    }
-
-    .caja:active {
-        background-color: rgb(112, 194, 167);
-    }
-
-    .caja:visited {
-        background-color: rgb(201, 247, 231);
-    }
-
-    .caja1 {
-        background-color: #44015e;
-        border-radius: 10px;
-        padding: 2px;
-        color: black;
-        width: 140px;
-    }
-
-    .caja1:hover {
-        background-color: rgb(112, 194, 167);
-    }
-
-    .caja1:active {
-        background-color: rgb(112, 194, 167);
-    }
-
-    .caja1:visited {
-        background-color: rgb(201, 247, 231);
-    }
-
-    .caja2 {
-        background-color: #44015e;
-        border-radius: 10px;
-        padding: 2px;
-        text-decoration: none;
-        width: 50px;
-        align-self: center;
-    }
-
-    .caja2:hover {
-        background-color: rgb(112, 194, 167);
-    }
-
-    .caja2:active {
-        background-color: rgb(112, 194, 167);
-    }
-
-    .caja2:visited {
-        background-color: rgb(201, 247, 231);
-    }
-
-}
-
-/*
- PALETA DE COLORES
-    color: #000000;
-    color: #44015e;
-    color: #e2c6ec;
-
-*/
+/*# sourceMappingURL=style.css.map */

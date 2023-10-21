@@ -1,0 +1,67 @@
+@import "../utils/variables";
+
+
+.bodyContact {
+    // Grid 
+    display: grid;
+    grid-template-areas:
+        "header    header     header"
+        "div       div        div"
+        "h2        h2         h2"
+        "section1  section2   section3"
+        "enviar    enviar     enviar"
+        "aside     aside      aside"
+        "footer    footer     footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 30%;
+    justify-items: stretch;
+    height: 65vh;
+    min-height: 50vh;
+    row-gap: 10px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+// Grid contacto 
+.headerGrid {
+    grid-area: header;
+}
+
+.divGrid {
+    grid-area: div;
+    margin: 5vh;
+}
+
+.h2Grid {
+    grid-area: h2;
+    color: $colorPrimario;
+    font-weight: bold;
+}
+
+.enviarGrid {
+    grid-area: enviar;
+    display: flex;
+    justify-content: center;
+
+}
+
+.asideGrid {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footerGrid {
+    grid-area: footer;
+    padding: 10px;
+}
+
+.gridRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
